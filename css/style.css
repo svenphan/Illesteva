@@ -98,6 +98,7 @@ a{
 	padding-left:5%;
 	font-family:"proximaNovaSemiBold";
 	font-size:0.9rem;
+
 }
 
 
@@ -123,6 +124,24 @@ a{
 	display:table-cell;
 	vertical-align:middle;
 	list-style:none;
+}
+
+
+#navContainer li{
+	padding-top:2%;
+	padding-bottom:2%;
+
+}
+
+#navContainer li:hover{
+	text-decoration:underline;
+	transition:all 1s;
+
+}
+
+#navContainer li:hover{
+	text-decoration:underline;
+
 }
 
 
@@ -155,7 +174,7 @@ footer{
 
 
 #pageContainer{
-	height:100%;
+	max-height:80%;
 	width:100%;
 }
 
