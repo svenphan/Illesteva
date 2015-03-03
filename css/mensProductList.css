@@ -57,3 +57,113 @@ h4{
 #Leonards:hover{
 	border:5px solid black;
 }
+
+
+/*modal*/
+
+article {
+	text-align: center;
+	padding: 2rem; 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	display:inline-block;
+}
+/***/
+
+
+#productModal{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100%
+}
+#rightContent{
+	position:absolute;
+	display:inline-block;
+	float:right;
+	padding:0;
+	margin:0;
+	height:100%;
+	
+}
+
+#rightContent img{
+	position:relative;
+	float:right;
+	height:100%;
+	width:100%;
+	
+}
+
+
+#leftContent{
+	-webkit-transform: rotate(10deg) scaleY(1.5) translate3d(-10%,0,0);
+	display:inline-block;
+	position: fixed;
+	/**background:aquamarine;**/
+	background:white;
+}
+
+#leftContent {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width:50%;
+	height:100%;
+	float:left;	
+	
+}
+
+.onTop{
+	width:35%;
+	position:absolute;
+	padding-left: 3.5em;
+	font-size:1em;
+
+	display:table;
+}
+
+.onTop img{
+	width:100%;
+	height:auto;
+	padding:0;
+	margin: 0;
+	
+	display:table-cell;
+	vertical-align:center;
+}
+
+
+h1.title, h3.subtitle{
+	font-family:"proximaNova";
+	text-transform:uppercase;
+	vertical-align:center;
+}
+
+h1.title{
+	padding:0;
+	margin:0;
+	font-size:1.5rem;
+}
+
+.subSection{
+	padding-top:2em;
+}	
+
+h3{
+	margin:0;
+	padding-top:0.5em;
+}
+h3.subtitle{
+	margin:0;
+	font-size:0.75rem;
+	display:inline;
+}
+
+p{
+	margin:0;
+	display:inline;
+}
