@@ -19,9 +19,11 @@
         <div class="bottomBorder"></div>
         <!--Top Navigation w/ Bag-->
         <nav id="customerInfoNav">
+            <a href="index.html">
             <div id="logo">
                 <img src="img/illestevaLogo.jpg" />
             </div>
+        </a>
             <ul class="customerInfoContainer">
                 <li>SIGN IN</li>
                 <li>CONTACT</li>
@@ -65,13 +67,12 @@
         <!--Glass Listings-->
         <div class="container glassListing">
             <div class="row">
-                <a href="">
-                <div class="col-4of12">
+                
+                <div class="col-4of12" id="leonards">
                     <img src="img/Leonard.jpg" />
                     <h3>Leonard Classic</h3>
                     <h4>$500.00</h4>
                 </div>
-                </a>
                 <a href="">
                 <div class="col-4of12">
                     <img src="img/Milan.jpg" />
@@ -104,4 +105,39 @@
                 </a>
             </div>
         </div>
+
+        <!--Modal-->
+        <div class="grid" id="productModal">
+            <div class="col-7of12">
+                <div id="rightContent">
+                    <img src = "img/illestevaBackground.jpg"alt="man with sunglasses">
+                </div>
+            </div>
+
+            <div class="col-5of12">
+                <div id="leftContent"></div>
+                
+                <!--ACTUAL CONTENT ON TOP-->
+                <div class="onTop">
+                    <img src = "img/Leonard.jpg"alt="golden frame sunglasses">
+                    
+                    <h1 class = "title"> Sunglasses</h1>
+                    <div class="subSection">
+                        <h3 class="subtitle">Description<h3>
+                        <p class = "txt">Quisque pulvinar dui molestie est consectetur porta. Etiam eu egestas ipsum. Donec in augue neque. </p>
+                    </div>
+                    
+                    <div class="subSection">
+                        <h3 class="subtitle">Description<h3>
+                        <p class = "txt">Quisque pulvinar dui molestie est consectetur porta. Etiam eu egestas ipsum. Donec in augue neque. </p>
+                    </div>
+                    
+                </div>
+                    
+            </div>
+        </div>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/productListingModal.js"></script>
     </body>
+</html>
