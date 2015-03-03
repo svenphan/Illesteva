@@ -1,3 +1,9 @@
+h3{
+	color:black;
+}
+h4{
+	color:black;
+}
 #navContainer ul li a{
 	color:black;
 
@@ -15,6 +21,10 @@
 	padding-left:2%;
 }
 
+.glassListing .col-4of12 img{
+	height:100%;
+	width:100%;
+}
 
 
 .row{
@@ -37,13 +47,13 @@
 	padding-right:5%;
 	padding-left:5%;
 }
-#leonards{
+#Leonards{
 	background-image:url("../img/Leonard2.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 	height:100%;
 }
 
-#leonards:hover{
+#Leonards:hover{
 	border:5px solid black;
 }
