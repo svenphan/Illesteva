@@ -3,11 +3,47 @@
 
 }
 
-.col-4of12 img{
+.col-4of12 a img{
 	width:100%;
+	height:100%;
+
+}
+
+
+.glassListing .col-4of12{
+	padding-right:2%;
+	padding-left:2%;
+}
+
+
+
+.row{
 	height:100%;
 }
 
-.row{
-	height:50%;
+.glassStyles{
+	width: 80%;
+	margin-top: 11%;
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
+}
+
+.glassListing{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
+	padding-right:5%;
+	padding-left:5%;
+}
+#leonards{
+	background-image:url("../img/Leonard2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100%;
+}
+
+#leonards:hover{
+	border:5px solid black;
 }
