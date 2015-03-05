@@ -1,7 +1,8 @@
 $(document).ready(function(){
-	$('#productModal,.seeMoreBtn').hide();
+	$('.seeMoreBtn,#modalBG').hide();
 	$('#leonards').on('click',function(){
-		$('#productModal').show();
+		$('#modalBG').show();
+		$('body').css({'overflow': 'hidden','height': '100%'});
 	})
 
 	
