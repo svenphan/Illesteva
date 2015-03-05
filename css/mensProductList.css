@@ -4,6 +4,7 @@ h3{
 h4{
 	color:black;
 }
+
 #navContainer ul li a{
 	color:black;
 
@@ -29,9 +30,14 @@ h4{
 .glassListing .col-4of12 img{
 	height:100%;
 	width:100%;
+	transition:all 0.25s;
 }
 .glassListing .col-4of12 img:hover{
 	cursor:pointer;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1)
+	transition:all 0.25s;
 }
 
 .glassStyles .col-4of12 img{
@@ -162,21 +168,26 @@ article {
 
 
 #productModal{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 5;
-	width: 100%;
-	height: 100%
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 5;
+	  width: 80%;
+	  height: 100%;
+	  left: 50%;
+	  margin-left: -40%;
 }
 #rightContent{
-	position:absolute;
-	display:inline-block;
-	float:right;
-	padding:0;
-	margin:0;
-	height:100%;
-	
+position: absolute;
+  display: inline;
+  
+  padding: 0;
+  margin: 0;
+
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #rightContent img{
