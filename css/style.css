@@ -28,12 +28,16 @@
     font-family: proximaNovaCond-SemiBold; src: url('../fonts/ProximaNova-Semibold.otf');
 }
 /*Font Style ends*/
+html{
+	height:100%;
+}
 
 body{
 	overflow-x:hidden;
 	margin:0;
 	font-family:"proximaNovaRegular";
 	font-size:1em;
+	height:100%;
 }
 
 a{
@@ -77,6 +81,7 @@ a{
 	margin-top: 3%;
 	margin-bottom: 3%;
 	margin-left:3%;
+	transition:all 0.5s;
 }
 #logo img{
 	width:100%;
@@ -91,6 +96,7 @@ a{
 	min-width:20%;
 	padding:0;
 	margin-top:5%;
+	transition:all 0.5s;
 }
 .customerInfoContainer li{
 	display:inline-block;
@@ -167,10 +173,7 @@ a{
 }
 
 
-#pageContainer{
-	max-height:80%;
-	width:100%;
-}
+
 
 .one{
 	background:url(../img/illestevaBackground.jpg);
