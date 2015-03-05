@@ -9,21 +9,34 @@ h4{
 
 }
 
-.col-4of12 a img{
+.col-4of12 img{
 	width:100%;
 	height:100%;
 
+}
+
+.col-4of12{
+	height:100%;
 }
 
 
 .glassListing .col-4of12{
 	padding-right:2%;
 	padding-left:2%;
+
 }
 
 .glassListing .col-4of12 img{
 	height:100%;
 	width:100%;
+}
+.glassListing .col-4of12 img:hover{
+	cursor:pointer;
+}
+
+.glassStyles .col-4of12 img{
+	width:100%;
+	height:100%;
 }
 
 
@@ -37,6 +50,8 @@ h4{
 	margin-left: auto;
 	margin-right: auto;
 	float: right;
+	height:75%;
+	padding-right:3%;
 }
 
 .glassListing{
@@ -47,18 +62,93 @@ h4{
 	padding-right:5%;
 	padding-left:5%;
 }
+
+
+#Leonards:hover,
+#Milan:hover,
+#Wavers:hover{
+	border:30px solid black;
+	transition:all 0.5s;
+
+}
+
+#Leonard img:hover,
+#Milan img:hover,
+#Wavers img:hover{
+	opacity:0;
+	transition:all 0.5s;
+}
+
 #Leonards{
-	background-image:url("../img/Leonard2.jpg");
+	background-image:url("../img/Leonard.jpg");
+}
+
+#Milan{
+	background-image:url("../img/Milan.jpg");
+}
+
+#Wavers{
+	background-image:url("../img/Rectangles.jpg");
+}
+
+.styleContainers{
 	background-repeat:no-repeat;
 	background-size:cover;
 	height:100%;
+	transition:all 0.5s;
+	position:relative;
 }
 
-#Leonards:hover{
-	border:5px solid black;
+
+.seeMoreBtn{
+	position: absolute;
+	border: 5px solid black;
+	width: 80%;
+	height: 15%;
+	top: 50%;
+	left: 50%;
+	margin-left: -40%;
 }
 
 
+#logo.scrollStyle{
+	margin-top:1%;
+	margin-bottom:1%;
+	transition:all 0.5s;
+	float: left
+}
+.customerInfoContainer.scrollStyle{
+	margin-top:3%;
+	transition:all 0.5s;
+}
+
+
+#fixedGlassNav{
+	width: 20%;
+	margin-left: 4%;
+	margin-top: 1%;
+	height: auto;
+	display:none;
+}
+.fixedGlassContainer{
+	height: auto;
+	display: inline-block;
+	width: 30%;
+}
+
+#fixedGlassNav.scrollStyle{
+	display:inline-block;
+	margin-top: 1%;
+	height: auto;
+	width: 20%;
+	margin-left: 7%;
+}
+
+
+.fixedGlassContainer img{
+	width:100%;
+	height:100%;
+}
 /*modal*/
 
 article {
