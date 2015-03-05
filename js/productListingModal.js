@@ -1,9 +1,16 @@
 $(document).ready(function(){
-	$('.seeMoreBtn,#modalBG').hide();
+	$('.seeMoreBtn,#modalBG,#shoppingBag').hide();
 	$('#leonards').on('click',function(){
 		$('#modalBG').show();
 		$('body').css({'overflow': 'hidden','height': '100%'});
-	})
+	});
+
+	$('#bagIcon').on('click',function(){
+		$('#shoppingBag').show();
+		$('#shoppingBag').addClass('show');
+
+
+	});
 
 	
 $(".styleContainers").on({
