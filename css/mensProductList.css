@@ -53,13 +53,22 @@ h4{
 
 
 #shoppingBag.show{
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
-	height: 77%;
+	height: 80%;
+	overflow-y: scroll;
 	z-index: 1;
 	width: 35%;
 	background: white;
+}
+
+#checkOut{
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	background: pink;
 }
 
 .itemContainer{
@@ -71,6 +80,25 @@ h4{
 	width: 35%;
 	display: inline-block;
 	height:100%;
+	margin-left:5%;
+}
+
+#priceContainer,
+#bagGlassPrice,
+#addRemoveIcon,
+#quantity{
+	display:inline-block;
+}
+
+#quantity{
+	border:3px solid black;
+	padding:5%;
+}
+
+#priceContainer{
+	vertical-align: top;
+	margin-top: 7%;
+	margin-left: 10%;
 }
 
 .glassStyles{
@@ -214,7 +242,16 @@ article {
 	width: 100;
 	height: 100%;
 	width: 100%;
+}
 
+#bagBG{
+	  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
 #rightContent{
 	position: absolute;
@@ -243,6 +280,13 @@ article {
 	-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 	position:relative;
+}
+
+.close{
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	font-size: 1.3rem;
 }
 
 .onTop{

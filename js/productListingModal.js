@@ -1,16 +1,19 @@
 $(document).ready(function(){
-	$('.seeMoreBtn,#modalBG,#shoppingBag').hide();
+	$('.seeMoreBtn,#modalBG,#bagBG').hide();
 	$('#leonards').on('click',function(){
 		$('#modalBG').show();
 		$('body').css({'overflow': 'hidden','height': '100%'});
 	});
 
 	$('#bagIcon').on('click',function(){
-		$('#shoppingBag').show();
+		$('#bagBG').show();
 		$('#shoppingBag').addClass('show');
+		$('body').css('overflow','hidden');
 
 
 	});
+
+
 
 	
 $(".styleContainers").on({
