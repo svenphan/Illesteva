@@ -27,6 +27,113 @@
 			</ul>
 		</nav>
 
+		<!--Top Navigation w/ Bag-->
+		<nav id="customerInfoNav">
+			<div id="logo">
+				<img src="img/illestevaLogo.jpg" />
+			</div>
+			<ul class="customerInfoContainer">
+				<li><div class="contact-bg dd-toggle">SIGN IN</div>
+					<ul class="dd-hidden">
+
+					<fieldset>
+						<h2 class="fs-title">Already A Member?</h2>
+					    	<div class="inputwrapper"> 
+						        <input type="text" class="form-acct" placeholder="Email Address">
+						    </div>
+						    <div class="inputwrapper"> 
+						        <input type="password" class="form-acct" placeholder="Password">
+						    </div>
+						    <div class="submitButton" id="FirstSubmit">Submit</div>
+
+						 <hr size="3" color="black">
+
+					    <h2 class="fs-title" id="first-fs-title">Create An Account</h2>
+					    	<div class="inputwrapper"> 
+						        <input type="text" class="form-acct" placeholder="First Name">
+						    </div>
+						    <div class="inputwrapper"> 
+						        <input type="text" class="form-acct" placeholder="Last Name">
+						    </div>
+						    <div class="inputwrapper"> 
+						        <input type="text" class="form-acct" placeholder="Email Address">
+						    </div>
+						    <div class="inputwrapper"> 
+						        <input type="password" class="form-acct" placeholder="Password">
+						    </div>
+						     <div class="inputwrapper"> 
+						        <input type="password" class="form-acct" placeholder="Confirm Password">
+						    </div>
+					    	
+					    	<div class="submitButton">Submit</div>
+					</fieldset>
+
+					</ul>
+				</li>
+
+				<li><div class="contact-bg dd-toggle">CONTACT</div>
+			      	<ul class="dd-hidden">
+					<fieldset>
+					    <h2 class="fs-title">Question/Comment?</h2>
+					      <div class="inputwrapper"> 
+					        <label for="form-name">Name:</label>
+					        <input type="text" class="form" placeholder="Jane Doe">
+					      </div>
+
+					      <div class="inputwrapper">
+					        <label for="form-subject">Subject:</label>
+					        <input type="text" class="form" placeholder="A title for your comment">
+					      </div>
+
+					      <div class="inputwrapper">
+					        <label for="form-comment">Comment:</label>
+					        <textarea id="form-comment" placeholder="Please place comment here"></textarea>
+					      </div>
+
+						 <div class="submitButton">Submit</div>
+
+						<h3 class="bottomMessage">Or Call Us: 1-800-039-3939</h3>
+					</fieldset>
+
+					</ul>
+				</li>
+
+
+				<li>
+					<div class="fa fa-shopping-cart dd-toggle"></div>
+					<ul class="dd-hidden">
+						<fieldset>
+						    <h2 class="fs-title">Your Cart</h2>
+								<div class="item">
+								    <img class="first" src="img/MensGlasses/Leonard_Classics1.jpg">
+								    <ul class="second">
+								<li><h3>Leonard Classic</h3></li>
+								<li><p>Price:$100</p></li>
+								<li><div class="removeButton">Remove</div></li>
+								</ul>
+								</div>
+
+								<div class="item">
+								    <img class="first" src="img/MensGlasses/Leonard_Classics5.jpg">
+								    <ul class="second">
+								<li><h3>Leonard Classic</h3></li>
+								<li><p>Price:$100</p></li>
+								<li><div class="removeButton">Remove</div></li>
+								</ul>
+								</div>
+								<p class="tax">Plus 12%: $24</p>
+								<div class="total">Total:$224.00</div>
+
+						   		<div class="checkoutButton">Checkout</div>
+						</fieldset>
+
+					</ul>
+					
+				</li>
+
+			</ul>
+		</nav>
+
 		<!--Product Navigation-->
 		<nav id="productNav">
 			<div id="navContainer">
@@ -56,12 +163,12 @@
 		<div class="row">
 			<nav class="nav">
 				<ul id="footer-menu">
-					<li><a href="http://press.acnestudios.com">Press</a></li>
-					<li><a href="http://www.acnestudios.com/about">About</a></li>
-					<!--			
-					<li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" class="icon icon-facebook"></a></li>
-					<li><a href="https://twitter.com/illesteva" target="_blank" class="icon icon-twitter"></a></li>
-					<li><a href="https://instagram.com/illesteva" target="_blank" class="icon icon-instagram"></a></li>-->
+					<li><a href="#">Press</a></li>
+					<li><a href="#">About</a></li>
+								
+					<li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" id="icon"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/illesteva" target="_blank" id="icon"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://instagram.com/illesteva" target="_blank" id="icon"><i class="fa fa-instagram"></i></a></li>
 				</ul>
 				
 				<div id="footer-info" class="nav">
@@ -71,6 +178,8 @@
 			
 		</div>
 	</footer>
+	<script src="js/jquery.js"></script>
+    <script src="js/drop-downs.js"></script>
 
 	</body>
 
