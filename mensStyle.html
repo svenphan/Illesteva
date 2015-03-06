@@ -51,6 +51,7 @@
         </nav>
 
         <!--Shopping Bag-->
+        <!--
         <div id="shoppingBag">
             <div id="bagContainer">
                 <div class="itemContainer">
@@ -62,7 +63,7 @@
                    <span>-</span>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!--Recommended Styles-->
         <div class="container glassStyles">
             <div class="row">
@@ -86,7 +87,46 @@
         </div>
         <!--Glass Listings-->
         <div class="container glassListing">
-            <section class="Leonards">
+            <section class="Leonards" style="width:100%;height:100%">
+                <div class="row">
+                    <div class="col-4of12" id="leonards">
+                        <img src="img/Leonard.jpg" />
+                        <h3>Leonard Classic</h3>
+                        <h4>$500.00</h4>
+                    </div>
+                    <a href="">
+                    <div class="col-4of12">
+                        <img src="img/Milan.jpg" />
+                        <h3>Milan Lounge</h3>
+                        <h4>$500.00</h4>
+                    </div>
+                    </a>
+                     <a href="">
+                    <div class="col-4of12">
+                        <img src="img/Rectangles.jpg" />
+                        <h3>Rectangles</h3>
+                        <h4>$500.00</h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="">
+                    <div class="col-4of12">
+                        <img src="img/Leonard.jpg" />
+                        <h3>Leonard Classic</h3>
+                        <h4>$500.00</h4>
+                    </div>
+                    </a>
+                    <a href="">
+                    <div class="col-4of12">
+                        <img src="img/Milan.jpg" />
+                        <h3>Milan Lounge</h3>
+                        <h4>$500.00</h4>
+                    </div>
+                    </a>
+                </div>
+            </section>
+            <section class="Leonards" style="width:100%;height:100%">
                 <div class="row">
                     <div class="col-4of12" id="leonards">
                         <img src="img/Leonard.jpg" />
@@ -132,43 +172,41 @@
             <div class="grid" id="productModal">
                     <div id="rightContent">
                         <img src = "img/illestevaBackground.jpg"alt="man with sunglasses">
+                        <div class="closeBtn">X</div>
                     </div>
 
                     <div id="leftContent">
                          <!--ACTUAL CONTENT ON TOP-->
                         <div class="onTop">
-                            <img src = "img/Leonard.jpg"alt="golden frame sunglasses">
-                            <div>
-                                <h3>Leonards</h3>
-                                <h5>$500.000</h5>
-                                <h6>$500.000</h6>
+                            <div style="width:100%;height:60%;">
+                            <img src= "img/Leonard.jpg"alt="golden frame sunglasses">
                             </div>
-                            <img src = "img/Leonard.jpg"alt="golden frame sunglasses">
-                            <div>
-                                <h3>Leonards</h3>
-                                <h5>$500.000</h5>
-                                <h6>$500.000</h6>
+                            <div id="swatchesContainer">
+                                <div></div>
+                                <div></div>
                             </div>
-                            <img src = "img/Leonard.jpg"alt="golden frame sunglasses">
-                            <div>
-                                <h3>Leonards</h3>
+                            <div class="productText">
+                                <h2>Leonards</h2>
                                 <h5>$500.000</h5>
-                                <h6>$500.000</h6>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
                             </div>
+                            <div id="addBtn"><h3>ADD TO BAD</h3></div>
                         </div>
                   </div>
             </div>
+            <div id="detailProductNav"></div>
         </div>
-        <footer class="footer">
+       <!--FOOTER STARTS-->
+    <footer class="footer">
         <div class="row">
             <nav class="nav">
                 <ul id="footer-menu">
-                    <li><a href="http://press.acnestudios.com">Press</a></li>
-                    <li><a href="http://www.acnestudios.com/about">About</a></li>
-                    <!--            
-                    <li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" class="icon icon-facebook"></a></li>
-                    <li><a href="https://twitter.com/illesteva" target="_blank" class="icon icon-twitter"></a></li>
-                    <li><a href="https://instagram.com/illesteva" target="_blank" class="icon icon-instagram"></a></li>-->
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">About</a></li>
+                                
+                    <li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" id="icon"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/illesteva" target="_blank" id="icon"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/illesteva" target="_blank" id="icon"><i class="fa fa-instagram"></i></a></li>
                 </ul>
                 
                 <div id="footer-info" class="nav">
@@ -178,8 +216,11 @@
             
         </div>
     </footer>
+
+    <!--FOOTER ENDS-->
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/productListingModal.js"></script>
+    <script src="js/fixedNav.js"></script>
     </body>
 </html>
