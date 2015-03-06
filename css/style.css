@@ -123,6 +123,27 @@ a{
 }
 
 
+/*Animated Nav*/
+#fixedGlassNav.scrollStyle{
+	display:inline-block;
+	margin-top: 1%;
+	height: auto;
+	width: 20%;
+	margin-left: 7%;
+}
+
+#logo.scrollStyle{
+	margin-top:1%;
+	margin-bottom:1%;
+	transition:all 0.5s;
+	float: left
+}
+.customerInfoContainer.scrollStyle{
+	margin-top:3%;
+	transition:all 0.5s;
+}
+
+/*animated nav ends*/
 
 #background{
 	width:100%;

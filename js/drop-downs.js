@@ -9,8 +9,6 @@ $(document).ready( function() {
 		// preventDefault lets us prevent the <a> tag from linking through
 		e.preventDefault();
 		if ( $(this).next("ul").hasClass("dd-shown") ) {
-
-
 			/*
 				!! This is the case if our drop-down is already shown.
 
@@ -22,11 +20,11 @@ $(document).ready( function() {
 		} 
 		// Else means that this is the case if our drop-down is not shown
 		else {
-
 			// As a result, we do the reverse of what is listed above.
 			$(this).next("ul").removeClass("dd-hidden").addClass("dd-shown");
 		}
 	});
+
 
 
 

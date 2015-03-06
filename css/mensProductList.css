@@ -52,26 +52,6 @@ h4{
 
 
 
-#shoppingBag.show{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	height: 77%;
-	z-index: 1;
-	width: 35%;
-	background: white;
-}
-
-.itemContainer{
-	width: 100%;
-	height: 35%
-}
-
-.itemContainer img{
-	width: 35%;
-	display: inline-block;
-	height:100%;
-}
 
 .glassStyles{
 	width: 80%;
@@ -140,17 +120,6 @@ h4{
 }
 
 
-#logo.scrollStyle{
-	margin-top:1%;
-	margin-bottom:1%;
-	transition:all 0.5s;
-	float: left
-}
-.customerInfoContainer.scrollStyle{
-	margin-top:3%;
-	transition:all 0.5s;
-}
-
 
 #fixedGlassNav{
 	width: 20%;
@@ -165,13 +134,6 @@ h4{
 	width: 30%;
 }
 
-#fixedGlassNav.scrollStyle{
-	display:inline-block;
-	margin-top: 1%;
-	height: auto;
-	width: 20%;
-	margin-left: 7%;
-}
 
 
 .fixedGlassContainer img{
@@ -201,7 +163,7 @@ article {
 	width: 100%;
 	left: 50%;
 	margin-left: -42.5%;
-	margin-top: 7%;
+	margin-top:0;
 }
 
 #modalBG{
@@ -240,8 +202,8 @@ article {
 	width: 50%;
 	height: 100%;
 	background: white;
-	-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-	clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
 	position:relative;
 }
 
@@ -256,8 +218,66 @@ article {
 
 .onTop img{
 	width:100%;
-	height:auto;
+	height:100%;
 	padding:0;
 	margin: 0;
 }
 
+.productText{
+	text-align: center;
+	width: 80%;
+	left: 50%;
+	position: relative;
+	margin-left: -40%;
+}
+
+#addBtn{
+	background: black;
+	width: 50%;
+	position: relative;
+	left: 50%;
+	margin-left: -25%;
+	text-align: center;
+
+}
+
+#addBtn h3{
+	margin: 0;
+	padding: 5%;
+	color:white;
+
+}
+
+.closeBtn{
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	color: white;
+	font-size: 1.5rem;
+}
+
+#swatchesContainer{
+	height: 4%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+#swatchesContainer div{
+	width: 6%;
+	position: relative;
+	height: 100%;
+	background: black;
+	display: inline-block;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#detailProductNav{
+	  width: 5%;
+	  height: 200px;
+	  background: pink;
+	  position: absolute;
+	  top: 50%;
+	  right: 2.5%;
+	  margin-top: -100px;
+}
