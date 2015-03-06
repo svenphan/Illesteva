@@ -225,8 +225,15 @@ a{
 	opacity: 1;
 }
 
+a.dd-toggle{
+	color:black;
+}
 
-fieldset {
+a.dd-toggle:active,a.dd-toggle:hover{
+	text-decoration: underline;
+}
+
+.fieldset {
 	background: white;
 	/*border: solid 1px black;*/
 	border:0 none;
@@ -239,6 +246,7 @@ fieldset {
 	margin-top: 1em;
 	right:2em;
 }
+
 
 input.text{
 	border: 1px solid black;
@@ -534,20 +542,52 @@ hr{
 
 
 
-@media(max-width:30em) {
-	
+@media(max-width:40em) {
+
 	.footer{
-		float:left;
-		padding:13px;
+		padding-right:1.5em;
+		bottom:0;
 	}
 	#footer-menu{
-		padding-right:50px;
-		display:block;
+		float:right;
+		padding-bottom: 1.5em;
+		padding-right: 0.25em;
 	}
 	#footer-menu>li {
 		display: inline-block;
-		padding:0;
-		float:left;
+		padding:0.25em;
+	}
+	#footer-info{
+		float:right;
+		padding-left: 40%;
+		bottom: 1em;
 	}
 	
+	.fieldset{
+		width:100%;
+		height: auto;
+		border:0 none;
+		box-sizing: border-box;
+		padding: 10px 30px;
+		margin-top: 1em;
+		right:0;
+		left:0;
+		position: absolute;
+		background-color: white;
+		z-index: 10;
+	}
+
+	.submitButton{
+		background: black;
+		color: white;
+	}
+
+	#navContainer{
+		visibility: hidden;
+	}
+	.first img{
+		width: 50%;
+		height:auto;
+	}
+
 }
