@@ -1,0 +1,63 @@
+.section-about{
+	width:100%;
+	height:100%;
+	margin-top:10%;
+
+}
+
+.aboutImage{
+	position:absolute;
+	display:block;
+	width:35%;
+}
+.aboutImage img{
+	height:100%;
+	position:relative;
+	display:block;
+	width:100%;
+
+}
+.about1 img{
+	margin-top:0;
+	display:block;
+}
+.about2 img{
+
+	display:block;
+}
+
+.aboutText{
+	padding:2em 10em;
+	text-align:center;
+}
+.aboutText{
+	width:65%;
+	height:100%;
+	margin-bottom:1em;
+	display:inline-block;
+	float:right;
+	
+}
+.aboutTitle{
+  text-align:center;
+}
+p:first-of-type {
+  font-family: "Aleo", "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  color: #81997e;
+  font-size: 1.15em;
+  line-height: 1.3em;
+  padding-right:3em;
+
+}
+
+.map {
+	margin-left: -5em;
+	margin-top: -1.5em;
+}
+
+.footer {
+	position:fixed;
+}
