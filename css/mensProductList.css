@@ -273,11 +273,53 @@ article {
 }
 
 #detailProductNav{
-	  width: 5%;
-	  height: 200px;
-	  background: pink;
-	  position: absolute;
-	  top: 50%;
-	  right: 2.5%;
-	  margin-top: -100px;
+	  width: 4%;
+  height: auto;
+  background: white;
+  position: absolute;
+  top: 50%;
+  right: 3.5%;
+  margin-top: -41px;
 }
+
+.iconNav{
+	width: 100%;
+  text-align: center;
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+.iconNav:first-child{
+	border-bottom:1px solid black;
+
+}
+
+/*CommentSection*/
+#leftContent.comments{
+	-webkit-clip-path:polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+	clip-path:polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+	-webkit-animation: modalBox 2s; /* Chrome, Safari, Opera */
+    animation: modalBox 2s;
+     animation-fill-mode: forwards;
+     -webkit-animation-fill-mode: forwards;
+}
+
+.closeBtn.comments{
+	color:black;
+	z-index:1;
+}
+
+
+/*animation*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes modalBox {
+    0% {left:0%;}
+    100% {left:50%;}
+ 
+}
+
+/* Standard syntax */
+@keyframes modalBox {
+    from {background: red;}
+    to {background: yellow;}
+}
+

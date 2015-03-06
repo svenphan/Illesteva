@@ -22,4 +22,15 @@ $('.seeMoreBtn').on('click',function(){
         1000);
 });
 
+$('#comments').on('click',function(){
+	$('#leftContent').addClass('comments');
+	$('.closeBtn').addClass('comments')
+});
+
+$('.closeBtn').on('click',function(){
+	$('#modalBG').hide();
+	$('body').css({'overflow': 'scroll','height': '100%'});
+	$('#leftContent,.closeBtn').removeClass('comments');
+})
+
 });
