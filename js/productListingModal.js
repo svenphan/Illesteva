@@ -6,19 +6,50 @@ $(document).ready(function(){
 	});
 
 	
-$(".styleContainers").on({
+$("#Leonards").on({
     mouseenter: function () {
-        $('.seeMoreBtn').fadeIn("slow");
+        $('#leonardBtn').fadeIn("slow");
     	},
     mouseleave: function () {
-    	$('.seeMoreBtn').hide();
+    	$('#leonardBtn').hide();
         
     	}
 	});
 
-$('.seeMoreBtn').on('click',function(){
+$("#Milan").on({
+    mouseenter: function () {
+        $('#milanBtn').fadeIn("slow");
+    	},
+    mouseleave: function () {
+    	$('#milanBtn').hide();
+        
+    	}
+	});
+
+
+$("#Wavers").on({
+    mouseenter: function () {
+        $('#waversBtn').fadeIn("slow");
+    	},
+    mouseleave: function () {
+    	$('#waversBtn').hide();
+        
+    	}
+	});
+
+$('#leonardBtn').on('click',function(){
 	 $('html,body').animate({
         scrollTop: $(".Leonards").offset().top -60},
+        1000);
+});
+$('#milanBtn').on('click',function(){
+	 $('html,body').animate({
+        scrollTop: $(".Milans").offset().top -60},
+        1000);
+});
+$('#waversBtn').on('click',function(){
+	 $('html,body').animate({
+        scrollTop: $(".Wavers").offset().top -60},
         1000);
 });
 
