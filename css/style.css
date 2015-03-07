@@ -245,6 +245,8 @@ a.dd-toggle:active,a.dd-toggle:hover{
 	width: 300px;
 	margin-top: 1em;
 	right:2em;
+	
+	z-index:5;
 }
 
 
@@ -436,48 +438,6 @@ hr{
 	text-align: center;
 	margin-top: 1em;
 	font-size: 0.75em;
-}
-
-
-/**Animation keyframes**/
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-/**TESTING TO SEE IF POSSIBLE page animation**/
-.m-scene {
-  .scene_element {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-
-  }
-
-  .scene_element--fadein {
-    animation-name: fadeIn;
-  }
-
-  .scene_element--fadeinup {
-    animation-name: fadeInUp;
-  }
-
-  .scene_element--fadeinright {
-    animation-name: fadeInRight;
-  }
-
-  /** Reverse "exit" animations */
-  &.is-exiting {
-      .scene_element {
-        animation-direction: alternate-reverse;
-      }
-  }
 }
 /***LEVONA ADDED END**/
 
