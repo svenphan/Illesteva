@@ -40,10 +40,7 @@ body{
 	height:100%;
 }
 
-a{
-	text-decoration:none;
-	color:white;
-}
+
 .leftBorder{
 	top:0;
 	left:0;
@@ -104,6 +101,8 @@ a{
 	padding-left:5%;
 	font-family:"proximaNovaSemiBold";
 	font-size:0.9rem;
+	transition:all 0.15s ease-in-out;
+	-webkit-transition:all 0.15s ease-in-out;
 
 }
 
@@ -155,7 +154,7 @@ a{
 	width:100%;
 }
 
-
+/*nav Container to switch Styles*/
 #productNav{
 	position:fixed;
 	z-index:4;
@@ -177,19 +176,50 @@ a{
 
 
 #navContainer li{
-	padding-top:2%;
-	padding-bottom:2%;
+	padding-top:4%;
+	padding-bottom:4%;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
 
 }
 
-#navContainer li:hover{
-	text-decoration:underline;
-	transition:all 1s;
+/*#navContainer li:hover{
+	transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+	text-decoration:line-through;
 
+}*/
+
+/*#navContainer ul li:hover > a{
+  opacity: 0.5;
 }
 
-#navContainer li:hover{
-	text-decoration:underline;
+#nacContainer a: hover ul li{
+	opacity:1;
+}*/
+
+ul li{
+	cursor:pointer;
+}
+
+ul:hover li {
+    opacity: .5;
+}
+
+ul li:hover {
+    opacity: 1;
+}
+
+
+#navContainer li a{
+	text-decoration:none;
+	color:white;
+	font-size:1rem;
+	text-transform:uppercase;
+	font-family:"proximaNovaSemiBold";
+	letter-spacing:3px;
+	transition:all 0.15s ease-in-out;
+	-webkit-transition:all 0.15s ease-in-out;
 
 }
 
@@ -200,6 +230,8 @@ a{
 	background:url(../img/illestevaBackground.jpg);
 	height:1200px;
 }
+
+/*ENDS*/
 
 /***LEVONA ADDED**/
 .dd-hidden {
@@ -230,7 +262,7 @@ a.dd-toggle{
 }
 
 a.dd-toggle:active,a.dd-toggle:hover{
-	text-decoration: underline;
+	cursor:pointer;
 }
 
 .fieldset {
