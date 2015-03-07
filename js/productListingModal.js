@@ -39,17 +39,17 @@ $("#Wavers").on({
 
 $('#leonardBtn').on('click',function(){
 	 $('html,body').animate({
-        scrollTop: $(".Leonards").offset().top -60},
+        scrollTop: $("#leonardsSection").offset().top -60},
         1000);
 });
 $('#milanBtn').on('click',function(){
 	 $('html,body').animate({
-        scrollTop: $(".Milans").offset().top -60},
+        scrollTop: $("#milansSection").offset().top -60},
         1000);
 });
 $('#waversBtn').on('click',function(){
 	 $('html,body').animate({
-        scrollTop: $(".Wavers").offset().top -60},
+        scrollTop: $("#Wavers").offset().top -60},
         1000);
 });
 
