@@ -11,7 +11,9 @@
 	<link rel="stylesheet" href="css/blog.css">
     <!--animates the tab menus-->
     <link rel="stylesheet" href="css/animate.css">
-	<title>Illesteva | Made in Italy.</title>
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/mobileStyle.css">
+	<title>Illesteva | Blog</title>
 	</head>
 	<body>
 		
@@ -20,19 +22,10 @@
 		<div class="rightBorder"></div>
 		<div class="bottomBorder"></div>
 		<!--Top Navigation w/ Bag-->
-		<nav id="customerInfoNav">
-			<div id="logo">
-				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
-			</div>
-			<ul class="customerInfoContainer">
-				<li>SIGN IN</li>
-				<li>CONTACT</li>
-				<li><i class="fa fa-shopping-cart"></i></li>
-			</ul>
-		</nav>
 
 		<!--Top Navigation w/ Bag-->
 		<nav id="customerInfoNav">
+			<a id="nav-toggle" href="#"><span></span></a>
 			<div id="logo">
 				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
 			</div>
@@ -138,22 +131,67 @@
 
 			</ul>
 		</nav>
-
-		<!-----------PRESS CONTENT--------------->
-		<div class="section-press">
-		<div class="pageContainer">
-		<!--About Image on left-->
-			<div class="aboutImage">
-				<div class="about-image-wrapper">
-					<img class="about1" src="img/aboutBW.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
-					<img class="about1" src="img/aboutBW3.jpeg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
-					<img class="about2" src="img/about2.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
-				</div>   
-			</div>
-			</div>
-		</div>
-		<!-----------PRESS CONTENT END--------------->
 		
+		<!-----------BLOG CONTENT--------------->
+		
+		<div class="pageContainer">
+		<div class="background">
+		<div class="section-blog">
+			<!--blog Image on left-->
+			<div class="blogPost">
+				<div class="individualPosts">
+					<div class="blog-text-wrapper">
+						<h1 class="blogTitle">Fun in the Sun</h1>
+					</div>	
+					
+					<div class="blog-image-wrapper">
+						<figure>
+						<img class="blog1" src="img/BlogPics/blog2.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
+						<figcaption>Posted on February 9, 2015 by Administrator</figcaption>
+						</figure>
+						
+						<div class="user-content">
+							<p class="blogText">To escape from the dreadful NYC winter, we took a trip down to Tulum, Mexico. Just two hours south of the popular resort mecca of Cancun, Tulum offers a refreshing change from other 5-star, cookie-cutter hotels of Yucatan Peninsula. Instead, you will find a perfect harmony of authentic Mexico and the amenities of a luxe paradise.</p>
+						</div>   
+					</div> 
+
+					<div class="blog-image-wrapper">
+						<figure>
+						<img class="blog1" src="img/BlogPics/blog3.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
+						<figcaption>Posted on February 9, 2015 by Administrator</figcaption>
+						</figure>
+						
+						<div class="user-content">
+							<p class="blogText">To escape from the dreadful NYC winter, we took a trip down to Tulum, Mexico. Just two hours south of the popular resort mecca of Cancun, Tulum offers a refreshing change from other 5-star, cookie-cutter hotels of Yucatan Peninsula. Instead, you will find a perfect harmony of authentic Mexico and the amenities of a luxe paradise.</p>
+						</div>   
+					</div> 
+				</div>
+				
+				<div class="individualPosts">
+					<div class="blog-text-wrapper">
+						<h1 class="blogTitle">Check out our Valentine’s Crushes </h1>
+					</div>	
+					
+					<div class="blog-image-wrapper">
+						<figure>
+						<img class="blog1" src="img/BlogPics/blog4.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
+						<figcaption>Posted on February 9, 2015 by Administrator</figcaption>
+						</figure>
+						
+						<div class="user-content">
+							<p>Founded in 2010, ILLESTEVA glasses are handmade in France and Italy, in concert with the world's leading manufactuers of luxury eyewear.</p>
+							<p class="blogText">To escape from the dreadful NYC winter, we took a trip down to Tulum, Mexico. Just two hours south of the popular resort mecca of Cancun, Tulum offers a refreshing change from other 5-star, cookie-cutter hotels of Yucatan Peninsula. Instead, you will find a perfect harmony of authentic Mexico and the amenities of a luxe paradise.</p>
+						</div>   
+					</div>   
+				</div>
+			</div>	
+		</div>
+		</div>
+		</div>
+
+		<!-----------BLOG END CONTENT--------------->
+		
+<!--FOOTER STARTS-->
 	<footer class="footer">
 		<div class="row">
 			<nav class="nav">
@@ -173,15 +211,17 @@
 			
 		</div>
 	</footer>
+
 	<!--FOOTER ENDS-->
 
 	<script src="js/jquery.js"></script>
     <script src="js/drop-downs.js"></script>
      <script src="js/productListingModal.js"></script>
      <script src="js/fixedNav.js"></script>
-	 
+	 <script src="js/hamburger.js"></script>
 	<script src="js/animatedDD.js"></script>
-
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/googleMap.js"></script>
 	</body>
 
 

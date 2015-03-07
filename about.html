@@ -11,7 +11,9 @@
 	<link rel="stylesheet" href="css/about.css">
     <!--animates the tab menus-->
     <link rel="stylesheet" href="css/animate.css">
-	<title>Illesteva | Made in Italy.</title>
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/mobileStyle.css">
+	<title>Illesteva | About</title>
 	</head>
 	<body>
 		
@@ -20,19 +22,10 @@
 		<div class="rightBorder"></div>
 		<div class="bottomBorder"></div>
 		<!--Top Navigation w/ Bag-->
-		<nav id="customerInfoNav">
-			<div id="logo">
-				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
-			</div>
-			<ul class="customerInfoContainer">
-				<li>SIGN IN</li>
-				<li>CONTACT</li>
-				<li><i class="fa fa-shopping-cart"></i></li>
-			</ul>
-		</nav>
 
 		<!--Top Navigation w/ Bag-->
 		<nav id="customerInfoNav">
+			<a id="nav-toggle" href="#"><span></span></a>
 			<div id="logo">
 				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
 			</div>
@@ -139,43 +132,52 @@
 			</ul>
 		</nav>
 		
-		<!-----------ABOUT CONTENT--------------->
+					<!-----------ABOUT CONTENT--------------->
+		
+		<div class="pageContainer">	<!--changed to class or else error-->
+		<div class="background">
 		<div class="section-about">
-		<div class="pageContainer">
-		<!--About Image on left-->
-			<div class="aboutImage">
-				<div class="about-image-wrapper">
-					<img class="about1" src="img/aboutBW.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
-					<img class="about2" src="img/aboutBW3.jpeg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
-				</div>   
-			</div>
-		<!--About Text on Right-->
-
-			<div class="aboutText"  id="aboutTextStuff">
-				<div class="about-text-wrapper">
-					<h1 class="aboutTitle">About Us</h1>
-					<div class="user-content">
-						<p>Founded in 2010, ILLESTEVA glasses are handmade in France and Italy, in concert with the world's leading manufactuers of luxury eyewear.</p>
-						<p class="AboutText">ILLESTEVA combines classic styles with contemporary Downtown New York City aesthetics, using materials like acetate and titanium with the design of each from.</p>
-						<p class="AboutText">ILLESTEVA has featured collaborative efforts with Jourdan Dunn, Lou Reed, Zac Posen, House of Waris, Band of Outsiders, and Dasha Zhukova. Most recently, ILLESTEVA has launched a line of hand-finished leather goods and umbrellas. ILLESTEVA backpacks and handbags are made with supple grained leather, combining natural, premium materials with urban functionality.</p>
-						<p class="AboutText">Celebrity fans include Beyonce, Rihanna, Lady Gaga, Katy Perry, Daniel Craig, Sienna Miller, Solange Knowles, Lena Dunham, Alexa Chung, Elton John, and Cara Delevingne.</p>
+			<!--About Image on left-->
+				<div class="aboutImage">
+					<div class="about-image-wrapper">
+						<img class="about1" src="img/aboutBW.jpg" alt="black white square photo of a sunglasses on a table">
+						<img class="about2" src="img/aboutBW3.jpeg" alt=" slanted black and white photo.3 sunglasses displayed on a table.">
 					</div>   
 				</div>
-			</div>
-		
 			<!--About Text on Right-->
 
-			<div class="aboutText">
-				<div class="about-text-wrapper">
-					<h1 class="aboutTitle">Where To Find Us</h1>
-					<p>49 Prince St New York, NY USA</p>
-					<div id="googleMap"></div>
+				<div class="aboutText"  id="aboutTextStuff">
+					<div class="about-text-wrapper">
+						<h1 class="aboutTitle">About Us</h1>
+						<div class="user-content">
+							<p>Founded in 2010, ILLESTEVA glasses are handmade in France and Italy, in concert with the world's leading manufactuers of luxury eyewear.</p>
+							<p class="AboutText">ILLESTEVA combines classic styles with contemporary Downtown New York City aesthetics, using materials like acetate and titanium with the design of each from.</p>
+							<p class="AboutText">ILLESTEVA has featured collaborative efforts with Jourdan Dunn, Lou Reed, Zac Posen, House of Waris, Band of Outsiders, and Dasha Zhukova. Most recently, ILLESTEVA has launched a line of hand-finished leather goods and umbrellas. ILLESTEVA backpacks and handbags are made with supple grained leather, combining natural, premium materials with urban functionality.</p>
+							<p class="AboutText">Celebrity fans include Beyonce, Rihanna, Lady Gaga, Katy Perry, Daniel Craig, Sienna Miller, Solange Knowles, Lena Dunham, Alexa Chung, Elton John, and Cara Delevingne.</p>
+						</div>   
+					</div>
+				</div>
+			
+				<!--About Text on Right-->
+
+				<div class="aboutText">
+					<div class="about-text-wrapper">
+						<h1 class="aboutTitle">Where To Find Us</h1>
+						<p>49 Prince St New York, NY USA</p>
+						<ul>
+							<li>M - F: 11am - 8pm </li>
+							<li>Sa: 11am - 7pm </li>
+							<li>Su: 11am - 6pm</li>
+						</ul>
+						<div id="googleMap"></div>
+					</div>
 				</div>
 			</div>
 		</div>
-		</div>	
+		</div>
 		<!-----------ABOUT END CONTENT--------------->
 		
+<!--FOOTER STARTS-->
 	<footer class="footer">
 		<div class="row">
 			<nav class="nav">
@@ -195,17 +197,17 @@
 			
 		</div>
 	</footer>
+
 	<!--FOOTER ENDS-->
 
 	<script src="js/jquery.js"></script>
     <script src="js/drop-downs.js"></script>
      <script src="js/productListingModal.js"></script>
      <script src="js/fixedNav.js"></script>
-	 
+	 <script src="js/hamburger.js"></script>
 	<script src="js/animatedDD.js"></script>
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script src="js/googleMap.js"></script>
-
 	</body>
 
 
