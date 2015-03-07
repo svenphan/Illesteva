@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$('#leonardsStory').css({'opacity':'1'});
 	$('.seeMoreBtn,#modalBG,#reviewSection,#clearGlasses').hide();
 	$('#leonards').on('click',function(){
 		$('#modalBG').show();
@@ -53,13 +54,41 @@ $('#waversBtn').on('click',function(){
         1000);
 });
 
-$('#comments').on('click',function(){
+// $('#comments').on('click',function(){
+// 	$('#leftContent').addClass('comments');
+// 	$('.closeBtn').addClass('comments')
+// 	$('.eyeGlassContainer').hide();
+// 	$('#reviewSection').show();
+
+// });
+
+$("#comments").click(function() {
 	$('#leftContent').addClass('comments');
 	$('.closeBtn').addClass('comments')
 	$('.eyeGlassContainer').hide();
 	$('#reviewSection').show();
-
+	$('#glassStoryShots').fadeOut();
+	$('#storyBackground').css({'width': '100%'});
+	$("#storyBackground").fadeTo(0.6,0.10, function() {
+	      $("#storyBackground").attr("src","img/modal/andrewmarc.png");
+	  }).fadeTo(1000,1);
+	  return false;
 });
+
+$("#viewProduct").click(function() {
+	$('#leftContent').removeClass('comments');
+	$('#leftContent').addClass('productView');
+	$('.closeBtn').removeClass('comments')
+	$('.eyeGlassContainer').show();
+	$('#reviewSection').hide();
+	$('#glassStoryShots').fadeIn();
+	$('#storyBackground').css({'width': '100%'});
+	$("#storyBackground").fadeTo(0.6,0.10, function() {
+	      $("#storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
+	  }).fadeTo(1000,1);
+	  return false;
+});
+
 
 $('.closeBtn').on('click',function(){
 	$('#modalBG').hide();
@@ -67,15 +96,21 @@ $('.closeBtn').on('click',function(){
 	$('#leftContent,.closeBtn').removeClass('comments');
 	$('#reviewSection').hide();
 	$('.eyeGlassContainer').show();
+	$('#glassStoryShots').fadeIn();
+	$('#storyBackground').css({'width': '93%'});
+	$("#storyBackground").fadeTo(0.6,0.10, function() {
+	      $("#storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
+	  }).fadeTo(1000,1);
+	  return false;
 })
 
-$('#viewProduct').on('click',function(){
-	$('#leftContent').removeClass('comments');
-	$('#leftContent').addClass('productView');
-	$('.closeBtn').removeClass('comments')
-	$('.eyeGlassContainer').show();
-	$('#reviewSection').hide();
-});
+// $('#viewProduct').on('click',function(){
+// 	$('#leftContent').removeClass('comments');
+// 	$('#leftContent').addClass('productView');
+// 	$('.closeBtn').removeClass('comments')
+// 	$('.eyeGlassContainer').show();
+// 	$('#reviewSection').hide();
+// });
 
 $('#grey').on('click',function(){
 	$('#grey').css({'border': '3px solid black'});
@@ -90,4 +125,61 @@ $('#blue').on('click',function(){
 	$('#clearGlasses').hide();
 	$('#blueGlasses').fadeIn();
 });
+
+//right side column story shots interaction
+
+// $('#leonardsTwoStory').on('click',function(){
+// 	$('#leonardsTwoStory').css({'opacity':'1'});
+// 	$('#leonardsThreeStory,#leonardsStory').css({'opacity':'0.5'});
+// 	$("#storyBackground").attr("src","img/modal/Leonards2.jpg");
+
+// })
+
+
+// $('#leonardsStory').on('click',function(){
+// 	$('#leonardsStory').css({'opacity':'1'});
+// 	$('#leonardsThreeStory,#leonardsTwoStory').css({'opacity':'0.5'});
+// 	$("#storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
+
+// })
+
+
+// $('#leonardsThreeStory').on('click',function(){
+// 	$('#leonardsThreeStory').css({'opacity':'1'});
+// 	$('#leonardsTwoStory,#leonardsStory').css({'opacity':'0.5'});
+// 	$("#storyBackground").attr("src","img/modal/mensLeonards3.jpg");
+
+// })
+
+$("#leonardsStory").click(function() {
+	$('#leonardsStory').css({'opacity':'1'});
+	$('#leonardsThreeStory,#leonardsTwoStory').css({'opacity':'0.5'});
+	  $("#storyBackground").fadeTo(0.6,0.10, function() {
+	      $("#storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
+	  }).fadeTo(1000,1);
+	  return false;
+});
+
+
+$("#leonardsThreeStory").click(function() {
+	$('#leonardsThreeStory').css({'opacity':'1'});
+	$('#leonardsTwoStory,#leonardsStory').css({'opacity':'0.5'});
+	  $("#storyBackground").fadeTo(0.6,0.10, function() {
+	      $("#storyBackground").attr("src","img/modal/mensLeonards3.jpg");
+	  }).fadeTo(1000,1);
+	  return false;
+});
+
+$("#leonardsTwoStory").click(function() {
+	$('#leonardsTwoStory').css({'opacity':'1'});
+	$('#leonardsThreeStory,#leonardsStory').css({'opacity':'0.5'});
+	  $("#storyBackground").fadeTo(0.6,0.10, function() {
+	      $("#storyBackground").attr("src","img/modal/Leonards2.jpg");
+	  }).fadeTo(1000,1);
+	  return false;
+});
+
+
+//ends
+
 });
