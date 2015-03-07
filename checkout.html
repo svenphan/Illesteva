@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/checkout.css">
+    <!--animates the tab menus-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/mobileStyle.css">
+	<title>Illesteva | Checkout</title>
+	</head>
+	<body>
+		
+				<!--borders-->
+		<div class="leftBorder"></div>
+		<div class="rightBorder"></div>
+		<div class="bottomBorder"></div>
+		<!--Top Navigation w/ Bag-->
+
+		<!--Top Navigation w/ Bag-->
+		<nav id="customerInfoNav">
+			<a id="nav-toggle" href="#"><span></span></a>
+			<div id="logo">
+				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
+			</div>
+			<ul class="customerInfoContainer">
+				<li><a class="contact-bg dd-toggle">SIGN IN</a>
+					<ul class="dd-hidden">
+
+					<li><div class="fieldset">
+						<h2 class="fs-title">Already A Member?</h2>
+					    	<div class="inputwrapper"> 
+						        <input type="text" class="form-acct" placeholder="Email Address">
+						    </div>
+						    <div class="inputwrapper"> 
+						        <input type="password" class="form-acct" placeholder="Password">
+						    </div>
+						    <div class="submitButton" id="FirstSubmit">Log-In</div>
+							
+							<div class="createAccnt dd-toggle"><a href="">New? Create An Account</a></div>
+							<!--hidden unless clicked-->
+							
+								<h2 class="fs-title" id="first-fs-title">Create An Account</h2>
+									<div class="inputwrapper"> 
+										<input type="text" class="form-acct" placeholder="First Name">
+									</div>
+									<div class="inputwrapper"> 
+										<input type="text" class="form-acct" placeholder="Last Name">
+									</div>
+									<div class="inputwrapper"> 
+										<input type="text" class="form-acct" placeholder="Email Address">
+									</div>
+									<div class="inputwrapper"> 
+										<input type="password" class="form-acct" placeholder="Password">
+									</div>
+									 <div class="inputwrapper"> 
+										<input type="password" class="form-acct" placeholder="Confirm Password">
+									</div>
+									
+									<div class="submitButton">Submit</div>
+					</div></li>
+
+					</ul>
+				</li>
+
+				<li><a class="contact-bg dd-toggle">CONTACT</a>
+			      	<ul class="dd-hidden">
+					<li><div class="fieldset">
+					    <h2 class="fs-title">Question/Comment?</h2>
+					      <div class="inputwrapper"> 
+					        <div class="form-name">Name:</div>
+					        <input type="text" class="form" placeholder="Jane Doe">
+					      </div>
+
+					      <div class="inputwrapper">
+					        <div class="form-subject">Subject:</div>
+					        <input type="text" class="form" placeholder="A title for your comment">
+					      </div>
+
+					      <div class="inputwrapper">
+					        <div class="form-comment">Comment:</div>
+					        <textarea id="form-comment" placeholder="Please place comment here"></textarea>
+					      </div>
+
+						 <div class="submitButton">Submit</div>
+
+						<h3 class="bottomMessage">Or Call Us: 1-800-039-3939</h3>
+					</div></li>
+
+					</ul>
+				</li>
+
+
+				<li>
+					<a class="fa fa-shopping-cart dd-toggle"></a>
+					<ul class="dd-hidden">
+						<li><div class="fieldset">
+						    <h2 class="fs-title">Your Cart</h2>
+								<div class="item">
+								    <img class="first" src="img/MensGlasses/Leonard_Classics1.jpg" alt="patterned sunglasses with royal blue lense">
+								    <ul class="second">
+								<li><h3>Leonard Classic</h3></li>
+								<li><p>Price:$100</p></li>
+								<li><div class="removeButton">Remove</div></li>
+								</ul>
+								</div>
+
+								<div class="item">
+								    <img class="first" src="img/MensGlasses/Leonard_Classics5.jpg" alt="pale brown and ivory sunglasses with gray brown lense">
+								    <ul class="second">
+								<li><h3>Leonard Classic</h3></li>
+								<li><p>Price:$100</p></li>
+								<li><div class="removeButton">Remove</div></li>
+								</ul>
+								</div>
+								<p class="tax">Plus 12%: $24</p>
+								<div class="total">Total:$224.00</div>
+
+						   		<div class="checkoutButton">Checkout</div>
+						</div></li>
+
+					</ul>
+					
+				</li>
+
+			</ul>
+		</nav>
+		
+		<!-----------CHECKOUT CONTENT--------------->
+		
+		<div class="pageContainer">	<!--changed to class or else error-->
+		<div class="background">
+		<div class="container section-checkout">
+			
+			<div class="header"><h1>Checkout</h1></div>
+			<!--1/3-->
+			<div class="col-4of12">
+				<div class="LogInSection">
+					
+					<div class="fieldset2">
+						<!----->	
+						<div class="emailSection">
+							<div class="headerCat"><h4>Enter Your Email</h4></div>
+					    	<div class="inputwrapper"> 
+						        <input type="text" class="form-email" placeholder="">
+						    </div>
+						</div>
+						<!----->	
+						<div class="Billing">
+						<div class="headerCat"><h4>Billing Address</h4></div>
+						
+							<div class="names">
+								<div class="inputwrapper-name"> 
+									<h5>First name*</h5>
+									<input type="text" class="form-name" placeholder="">
+								</div>
+								<div class="inputwrapper-name"> 
+									<h5>Last name*</h5>
+									<input type="text" class="form-name" placeholder="">
+								</div>
+							</div>
+							
+							<div class="inputwrapper"> 
+								<h5>Telephone*</h5>
+								<input type="text" class="form-acct" placeholder="">
+							</div>
+							<div class="inputwrapper"> 
+								<h5>Address*</h5>
+								<input type="text" class="form-acct" placeholder="">
+								
+							</div>
+								
+							
+							<div class="city">
+								<div class="inputwrapper-name"> 
+									<h5>Zip/Postal code *</h5>
+									<input type="text" class="form-name" placeholder="">
+								</div>
+								<div class="inputwrapper-name"> 
+									<h5>City *</h5>
+									<input type="text" class="form-name" placeholder="">
+								</div>
+							</div>
+							
+							<div class="inputwrapper"> 
+								<h5>Country</h5>
+								<select>
+									<option value="canada">Canada</option>
+									<option value="united kingdown">United Kingdown</option>
+									<option value="italy">Italy</option>
+									<option value="United States">United States</option>
+								</select>
+							</div>
+							<div class="inputwrapper"> 
+								<h5>State/Province</h5>
+								<select>
+									<option value="alberta">Alberta</option>
+									<option value="british columbia">British Columbia</option>
+									<option value="saskatchewan">Saskatchewan</option>
+									<option value="manitoba">Manitoba</option>
+									<option value="ontario">Ontario</option>
+								</select>
+							</div>
+							
+							
+						</div>
+							
+					</div> <!--fieldset2-->
+				</div>
+			</div>
+			
+			<!--1/3-->
+			<div class="col-4of12">
+				<div class="BillingInfo">
+					
+					<div class="fieldset2">
+						<!----->		
+						<div class="billingSection">
+							<div class="headerCat"><h4>Enter Your Email</h4></div>
+					    	<div class="shipping"> 
+						        <form>
+								<input type="radio" name="shipping" id="ship1">UPS Standard - Delivery within 3-6 business days, 15.00 Usd<br>
+								<input type="radio" name="shipping" id="ship2">UPS Express - Delivery within 2-3 business days, 30.00 Usd<br>
+								<input type="radio" name="shipping" id="ship3">Free shipping (UPS standard), 0.00 Usd
+								</form>
+						    </div>
+						</div><!--billingSection-->
+						
+						<!----->		
+						<div class="billingSection">
+							<div class="headerCat"><h4>Payment Method</h4></div>
+					    	<div class="shipping"> 
+						        <form>
+								<input type="radio" name="shipping" id="paypal">PayPal <br>
+								<input type="radio" name="shipping" id="cc">Credit Card<br>
+								<p class="terms">You will enter your payment details on an extra secure payment page when you click on "Proceed to Payment". No sensitive information is handled by Illesteva</p>
+								</form>
+						    </div>
+						</div><!--billingSection-->
+							
+					</div> <!--fieldset2-->
+					
+					
+				</div>
+			</div>
+			
+			<!--1/3-->
+			<div class="col-4of12">
+				<div class="OrderSummary">
+					<div class="fieldset2">
+						<!----->		
+						<div class="billingSection">
+							<div class="headerCat"><h4>Order Summary</h4></div>
+					    	<div class="summary"> 
+								<div class="eachProduct">
+						        <p class="purchasedProduct">LEONARD CLASSIC</p>
+								<p class="purchasedProductPrice">1x	$500.00 Usd </p>
+								</div>
+									<div class="line-separator"></div>
+								<div class="eachProduct">
+						        <p class="purchasedProduct">LEONARD MILAN</p>
+								<p class="purchasedProductPrice">1x	$500.00 Usd </p>
+								</div>
+									<div class="line-separator"></div>
+									
+								<div class="totalPrice">
+						        <p class="totalpurchasedProduct">TOTAL</p>
+								<p class="purchasedProductPrice" id="SummedPrice">$1000.00 Usd</p>
+								</div>
+								
+							<div class="finalcheckoutButton">Proceed With Payment</div>
+							<p class="finalCheck">Within 14 days of delivery, you may return your order. Exceptions and restrictions apply.</p>
+							
+						    </div>
+						</div><!--billingSection-->
+						
+							
+					</div> <!--fieldset2-->
+				</div>
+			</div>
+			
+			
+		</div>
+		</div>
+		<!-----------ABOUT END CONTENT--------------->
+		
+<!--FOOTER STARTS-->
+	<footer class="footer">
+		<div class="row">
+			<nav class="nav">
+				<ul id="footer-menu">
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="about.html">About</a></li>
+								
+					<li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" id="icon"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/illesteva" target="_blank" id="icon"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://instagram.com/illesteva" target="_blank" id="icon"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+				
+				<div id="footer-info" class="nav">
+					© 2015 Illesteva&nbsp;&nbsp;All rights reserved
+				</div>		
+			</nav>
+			
+		</div>
+	</footer>
+
+	<!--FOOTER ENDS-->
+
+	<script src="js/jquery.js"></script>
+    <script src="js/drop-downs.js"></script>
+     <script src="js/productListingModal.js"></script>
+     <script src="js/fixedNav.js"></script>
+	 <script src="js/hamburger.js"></script>
+	<script src="js/animatedDD.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/googleMap.js"></script>
+	</body>
+
+
+</html>

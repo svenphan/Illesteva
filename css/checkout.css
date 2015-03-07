@@ -1,0 +1,222 @@
+.section-checkout{
+	width:80%;
+	height:100%;
+	margin-top:12%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-4of12{
+	height:500px;
+	padding:3px;
+	text-align:left;
+}
+
+.header{
+	text-align:center;
+}
+.header>h1{
+	margin-bottom:0;
+}
+
+/** Log In Section **/
+.LogInSection{
+	position:relative;
+	display:block;
+}
+
+.fieldset2{
+	box-shadow:none;
+	z-index:1;
+	width:90%;
+	margin-top:0;
+	padding-top:0;
+	padding-bottom:0;
+	margin-top:0;
+}
+
+.FirstSubmit{
+	margin-left: 18%;
+	margin-top:0;
+	width:75%;
+}
+#first-fs-title {
+  margin-top: 0;
+  margin-bottom:0.5em;
+}
+.BillingInfo{
+	position:relative;
+	display:-inline-block;
+}
+.headerCat{
+  margin-bottom: 2px;
+  margin-top: 2px;
+  border-bottom: 1px solid black;
+}
+
+.headerCat>h4{
+	margin-bottom:0.5em;
+}
+
+.Billing, .emailSection{
+	width:100%;
+}
+
+.billingSection{
+	margin-top:2em;
+}
+h5{
+	margin: 1em 0 0.5em 0;
+}
+
+.names{
+	width:100%;
+}
+.form-name{
+	padding: 0.5em;
+	margin: 0;
+	width:100%;
+}
+
+.form-email{
+	padding: 0.5em;
+	margin-top:0.5em;
+	width:100%;
+}
+.inputwrapper-name{
+	width:49%;
+	display:inline-block;
+}
+.form-acct{
+	margin: 0;
+	width:100%;
+}
+
+select {
+	padding: 0.5em;
+	width:100%;
+	box-sizing: border-box;
+}
+
+/** Billing Info Section **/
+.shipping{
+	font-size:0.85em;
+}
+
+.terms{
+	padding-left:2em;
+}
+
+
+/** Payment **/
+.OrderSummary{
+	position:relative;
+	display:-inline-block;
+}
+.billingSection{
+	margin-top:2em;
+}
+.billingSection>.summary{
+	padding-top:0.5em;
+	padding-left:0.5em;
+	padding-bottom:1em;
+	font-size:0.75em;
+}
+
+
+.line-separator{
+	height:1px;
+	border-bottom:1px solid gray;
+	width:100%;
+}
+
+.purchasedProduct{
+	padding:1em 0;
+	display:inline-block;
+}
+.purchasedProductPrice{
+	padding:1em 0;
+	display:inline-block;
+	float:right;
+}
+
+
+.totalpurchasedProduct{
+	padding:1em 0;
+	display:inline-block;
+	font-weight:bold;
+}
+
+#SummedPrice{
+	font-weight:bold;
+}
+
+.finalcheckoutButton{
+	text-align: center;
+	padding: 1em 2em;
+	border: 1px solid black;
+	font-size: 1rem;
+	margin-top: 1em;
+}
+.finalcheckoutButton:hover{
+  background:black;
+  color:white;
+  cursor:pointer;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.finalCheck{
+	font-style:italic;
+	color:DarkGray;
+}
+/** Payment END**/
+
+.footer{
+	position:fixed;
+	bottom:0;
+	left:0;
+}
+
+
+/**MOBILE CHANGES**/
+@media(max-width:40em) {
+	.section-checkout{
+		margin-top:25%;
+		padding-left:2em;
+		width:100%;
+		padding-bottom:3em;
+		
+	}
+	.col-4of12{
+		width:100%;
+		height:100%;
+		padding:3px;
+		text-align:left;
+	}
+	
+	.finalcheckoutButton{
+		text-align: center;
+		padding: 1em 2em;
+		background:black;
+		color:white;
+		font-size: 1rem;
+		margin-top: 1em;
+		margin-bottom:3em;
+	}
+	.finalcheckoutButton:active{
+		text-align: center;
+		padding: 1em 2em;
+		background:darkslategrey;
+		color:white;
+		font-size: 1rem;
+		margin-top: 1em;
+	}
+
+	select {
+	padding: 0.5em;
+	width:80%;
+	box-sizing: border-box;
+}
+
+}
+
