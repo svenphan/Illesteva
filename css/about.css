@@ -27,15 +27,17 @@
 }
 
 .aboutText{
-	padding:1em 7em;
+	padding:1em 10em;
 	text-align:center;
 	width:65%;
 	height:100%;
-	margin-bottom:1em;
 	display:inline-block;
 	float:right;
 }
 
+#aboutTextStuff{
+	padding:1em 7em;
+}
 .aboutTitle{
   text-align:center;
 }
@@ -48,6 +50,7 @@ p:first-of-type {
 	font-size: 1.15em;
 	line-height: 1.3em;
 	text-align:center;
+	margin-bottom:0.5em;
 }
 
 #googleMap{
