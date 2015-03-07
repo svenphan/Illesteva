@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!--animates the tab menus-->
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/mobileStyle.css">
 	<title>Illesteva | Made in Italy.</title>
 	</head>
 	<body>
@@ -19,19 +21,10 @@
 		<div class="rightBorder"></div>
 		<div class="bottomBorder"></div>
 		<!--Top Navigation w/ Bag-->
-		<nav id="customerInfoNav">
-			<div id="logo">
-				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
-			</div>
-			<ul class="customerInfoContainer">
-				<li>SIGN IN</li>
-				<li>CONTACT</li>
-				<li><i class="fa fa-shopping-cart"></i></li>
-			</ul>
-		</nav>
 
 		<!--Top Navigation w/ Bag-->
 		<nav id="customerInfoNav">
+			<a id="nav-toggle" href="#"><span></span></a>
 			<div id="logo">
 				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
 			</div>
@@ -191,7 +184,7 @@
     <script src="js/drop-downs.js"></script>
      <script src="js/productListingModal.js"></script>
      <script src="js/fixedNav.js"></script>
-	 
+	 <script src="js/hamburger.js"></script>
 	<script src="js/animatedDD.js"></script>
 
 	</body>
