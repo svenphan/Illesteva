@@ -133,11 +133,16 @@ p:first-of-type {
 		width:100%;
 	}
 	#aboutTextStuff {
-		padding: 0 1em;
+		padding: 3em 1em 3em 0;
 	}
 	.aboutText{
 		width:100%;
 		padding: 0 1em;
+	}
+	
+	#wheretofindus{
+		padding-top:5em;
+		margin-top: 5em;
 	}
 	
 	#googleMaps{

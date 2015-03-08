@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/mobileStyle.css">
-	<title>Illesteva | About</title>
+	<title>Illesteva | Made in Italy.</title>
 	</head>
 	<body>
 		
@@ -30,7 +30,7 @@
 				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
 			</div>
 			<ul class="customerInfoContainer">
-				<li><a class="contact-bg dd-toggle">SIGN IN</a>
+				<li id="signInLink"><a class="contact-bg dd-toggle">SIGN IN</a>
 					<ul class="dd-hidden">
 
 					<li><div class="fieldset">
@@ -69,7 +69,7 @@
 					</ul>
 				</li>
 
-				<li><a class="contact-bg dd-toggle">CONTACT</a>
+				<li id="contactLink"><a class="contact-bg dd-toggle">CONTACT</a>
 			      	<ul class="dd-hidden">
 					<li><div class="fieldset">
 					    <h2 class="fs-title">Question/Comment?</h2>
@@ -122,7 +122,7 @@
 								<p class="tax">Plus 12%: $24</p>
 								<div class="total">Total:$224.00</div>
 
-						   		<div class="checkoutButton">Checkout</div>
+						   		<a href="checkout.html"><div class="checkoutButton">Checkout</div></a>
 						</div></li>
 
 					</ul>
@@ -130,11 +130,20 @@
 				</li>
 
 			</ul>
+			<ul class="mobileProductNav">
+				<li><a href="#">Collaborations</a></li>
+                <li><a href="mensStyle.html">Mens</a></li>
+                <li><a href="#">Womens</a></li>
+                <li><span><a href="#">Bags</a></span></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Contact</a></li>
+			</ul>
 		</nav>
+
 		
-					<!-----------ABOUT CONTENT--------------->
+					<!--ABOUT CONTENT-->
 		
-		<div class="pageContainer">	<!--changed to class or else error-->
+		<div class="pageContainer">
 		<div class="background">
 		<div class="section-about">
 			<!--About Image on left-->
@@ -161,7 +170,7 @@
 				<!--About Text on Right-->
 
 				<div class="aboutText">
-					<div class="about-text-wrapper">
+					<div class="about-text-wrapper"  id="wheretofindus">
 						<h1 class="aboutTitle">Where To Find Us</h1>
 						<p>49 Prince St New York, NY USA</p>
 						<ul>
@@ -175,30 +184,30 @@
 			</div>
 		</div>
 		</div>
-		<!-----------ABOUT END CONTENT--------------->
+		<!--ABOUT END CONTENT-->
 		
 <!--FOOTER STARTS-->
-	<footer class="footer">
-		<div class="row">
-			<nav class="nav">
-				<ul id="footer-menu">
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="about.html">About</a></li>
-								
-					<li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" id="icon"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://twitter.com/illesteva" target="_blank" id="icon"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://instagram.com/illesteva" target="_blank" id="icon"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-				
-				<div id="footer-info" class="nav">
-					© 2015 Illesteva&nbsp;&nbsp;All rights reserved
-				</div>		
-			</nav>
-			
-		</div>
-	</footer>
+    <footer class="footer">
+        <div class="row">
+            <nav class="nav">
+                <ul id="footer-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
 
-	<!--FOOTER ENDS-->
+                    <li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" class="icon"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/illesteva" target="_blank" class="icon"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/illesteva" target="_blank" class="icon"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+
+                <div id="footer-info" class="nav">
+                    © 2015 Illesteva&nbsp;&nbsp;All rights reserved
+                </div>
+            </nav>
+
+        </div>
+    </footer>
+
+    <!--FOOTER ENDS-->
 
 	<script src="js/jquery.js"></script>
     <script src="js/drop-downs.js"></script>
