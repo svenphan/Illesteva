@@ -247,7 +247,7 @@ ul li:hover {
 	text-align: center;
 	margin: 1em 1.5em 0 0;
 	width:400px;
-	visibility: none;
+	display: none;
 	position: absolute;
 	opacity: 0;
 }
@@ -257,7 +257,7 @@ ul li:hover {
 }
 
 .dd-shown {
-	visibility: visible;
+	display: block;
 	opacity: 1;
 }
 
