@@ -1,8 +1,15 @@
 
 @media(max-width:40em) {
-
+.container{
+	margin:0;
+	padding:0;
+}
 
 /*Product Navigation- Mens,Womens,Umbrellas*/
+.pageContainer{
+	width:100%;
+	height:50%;
+}
 	.mobileProductNav{
 	list-style: none;
 	text-align: center;
@@ -10,7 +17,9 @@
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.25s ease-in-out;
 }
-
+	#productNav{
+		display:none;
+	}
 	
 	.mobileProductNav li{
 	cursor: pointer;
@@ -29,15 +38,22 @@
 	#customerInfoNav{
 		z-index:5;
 	}
+
+	#fixedGlassNav{
+		display:none;
+	}
 /*footer*/
 	.footer{
-		padding-right:1.5em;
-		bottom:0;
+		padding: 3%;
 	}
 	#footer-menu{
-		float:right;
-		padding-bottom: 1.5em;
-		padding-right: 0.25em;
+	width: 100%;
+	text-align: center;
+	font-size: 1.15rem;
+	padding: 0;
+	}
+	#footer-info{
+		display:none;
 	}
 	#footer-menu>li {
 		display: inline-block;
@@ -62,7 +78,77 @@
 		background-color: white;
 		z-index: 10;
 	}
+
+	li#footerAbout,
+	li#footerBlog{
+		display:none;
+	}
 /*END*/
+
+/*MENS PRODUCT LISTING STYLE*/
+	.glassStyles{
+		width: 100%;
+		height: 100%;
+}
+	.glassStyles .row{
+		height:33.3333%;
+		width:100%;
+		margin:0;
+		padding:0;
+		margin-top:11%;
+	}
+
+	.glassStyles .row .col-4of12{
+		width:100%;
+		height:100%;
+	}
+
+	.glassListing{
+		display:none;
+	}
+
+	.seeMoreBtn{
+		display:none !important;
+	}
+
+	div#Leonards:hover,
+	div#Milan:hover,
+	div#Wavers:hover{
+		border:none;
+	}
+
+	.leonardsMobile,
+	.milanMobile,
+	.waversMobile{
+	display:block;
+
+	}
+
+	.leonardsDesktop,
+	.milanDesktop,
+	.waversDesktop{
+		display:none;
+	}
+
+	
+	.styleInfoContainer h4{
+		font-size:2.5rem;
+	}
+
+	.styleInfoContainer p{
+		font-size:0.9rem;
+	}
+
+	.styleInfoContainer{
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		height: 54px;
+		margin-top: -22px;
+	}
+
+/*ENDS*/
 
 	.submitButton{
 		background: black;

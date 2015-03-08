@@ -127,13 +127,7 @@ a{
 
 
 /*Animated Nav*/
-#fixedGlassNav.scrollStyle{
-	display:inline-block;
-	margin-top: 1%;
-	height: auto;
-	width: 20%;
-	margin-left: 7%;
-}
+
 
 #logo.scrollStyle{
 	margin-top:1%;

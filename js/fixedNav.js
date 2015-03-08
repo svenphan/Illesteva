@@ -5,11 +5,13 @@ $(window).scroll(function() {
     var scroll_pos_test =350;             
 
     if(y_scroll_pos > scroll_pos_test) {
-	   $("#logo,.customerInfoContainer,#fixedGlassNav").addClass('scrollStyle');
+	   $("#logo,.customerInfoContainer").addClass('scrollStyle');
+	   $('#fixedGlassNav').fadeIn();
     }
 	else
 	{
-		$("#logo,.customerInfoContainer,#fixedGlassNav").removeClass('scrollStyle');
+		$("#logo,.customerInfoContainer").removeClass('scrollStyle');
+		$('#fixedGlassNav').fadeOut(10);
 	}
 });
 
