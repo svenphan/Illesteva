@@ -87,8 +87,8 @@
 	transition: all 0.5s
 	}
 
-	.customerInfoContainer li:first-child,
-	.customerInfoContainer li:nth-child(2)
+	#signInLink,
+	#contactLink
 	{
 		display:none;
 	}

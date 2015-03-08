@@ -475,6 +475,21 @@ hr{
 	margin-top: 1em;
 	font-size: 0.75em;
 }
+::-webkit-input-placeholder {
+   font-size:1em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size:1em;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size:1em; 
+}
+
+:-ms-input-placeholder {  
+   font-size:1em;  
+}
 /***LEVONA ADDED END**/
 
 
