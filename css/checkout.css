@@ -193,7 +193,17 @@ select {
 		padding:3px;
 		text-align:left;
 	}
-	
+	.fieldset2{
+		padding-left:2em;
+	}
+	.BillingInfo{
+		/**padding-top:85%;**/
+		margin-top:20em;
+	}
+	.OrderSummary{
+		/**padding-top: 110%;**/
+		margin-top:25em;
+	}
 	.finalcheckoutButton{
 		text-align: center;
 		padding: 1em 2em;
@@ -213,10 +223,22 @@ select {
 	}
 
 	select {
-	padding: 0.5em;
-	width:80%;
-	box-sizing: border-box;
-}
+		padding: 0.5em;
+		width:80%;
+		box-sizing: border-box;
+	}
 
+	.footer-ContactMobile {
+		padding: 3%;
+		bottom:0;
+		position: fixed;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+		line-height: 1.5;
+		font-size: 0.70em;
+		z-index: 9;
+		width: 100%;
+		background: #ffffff;
+		color:#000000;	
+	}
 }
 
