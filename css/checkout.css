@@ -196,6 +196,9 @@ select {
 	.fieldset2{
 		padding-left:2em;
 	}
+	.fs-title{
+		padding-top:1em;
+	}
 	.BillingInfo{
 		/**padding-top:85%;**/
 		margin-top:20em;
