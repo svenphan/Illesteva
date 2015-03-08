@@ -1,12 +1,12 @@
 $(document).ready(function(){
+$('.mobileProductNav').hide();
 
 	document.querySelector( "#nav-toggle" )
 	  .addEventListener( "click", function() {
 	    this.classList.toggle( "active" );
-	  });
-
-        $('body').animate({
-            left:'285px'
-        },200);
+	  })
     
+   $('#nav-toggle').on('click',function(){
+   	 $('.mobileProductNav').toggle(100);
+   })
 });
