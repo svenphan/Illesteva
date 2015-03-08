@@ -127,18 +127,12 @@
 	height:100%;
 }
 
-.styleContainer:hover{
+/*.styleContainer:hover{
 	opacity:0;
 	transition:all 0.5s;
 	cursor:pointer;
-}
+}*/
 
-
-#Leonards{
-	background-image:url("../img/classicLeonard.jpg");
-	background-position:center;
-	background-repeat:no-repeat;
-}
 
 #Milan{
 	background-image:url("../img/classicMilan.jpg");
@@ -160,7 +154,9 @@
 	position:relative;
 }
 
-
+.styleContainers:hover{
+	cursor:pointer;
+}
 .styleInfoContainer{
 	color: black;
 	position: absolute;
@@ -202,14 +198,35 @@
 	margin-left: -40%;
 }
 
+.seeMoreBtn:hover{
+	background:black;
+	color:white;
+	transition:all 1s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+}
+
 /*nav section ends*/
 
-#fixedGlassNav{
+/*#fixedGlassNav{
 	width: 20%;
 	margin-left: 4%;
 	margin-top: 1%;
 	height: auto;
 	display:none;
+
+}*/
+
+#fixedGlassNav{
+	display:inline-block;
+	margin-top: 1%;
+	height: auto;
+	width: 20%;
+	margin-left: 7%;
+}
+
+#fixedGlassNav div{
+	padding-left:2%;
+	padding-right:2%;
 }
 .fixedGlassContainer{
 	height: auto;

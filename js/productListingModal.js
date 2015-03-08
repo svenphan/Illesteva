@@ -6,37 +6,17 @@ $(document).ready(function(){
 		$('body').css({'overflow': 'hidden','height': '100%'});
 	});
 
+$("#Leonards,#Milan,#Wavers").on({ 
+	mouseenter: function () {
+        $('.styleContainer',this).fadeOut("slow");
+        $('.seeMoreBtn',this).fadeIn('slow');
+   	},
+    mouseleave: function () {
+    	 $('.styleContainer',this).fadeIn("slow");
+    	 $('.seeMoreBtn',this).fadeOut('slow');
+    	}
+});
 	
-$("#Leonards").on({
-    mouseenter: function () {
-        $('#leonardBtn').fadeIn("slow");
-    	},
-    mouseleave: function () {
-    	$('#leonardBtn').hide();
-        
-    	}
-	});
-
-$("#Milan").on({
-    mouseenter: function () {
-        $('#milanBtn').fadeIn("slow");
-    	},
-    mouseleave: function () {
-    	$('#milanBtn').hide();
-        
-    	}
-	});
-
-
-$("#Wavers").on({
-    mouseenter: function () {
-        $('#waversBtn').fadeIn("slow");
-    	},
-    mouseleave: function () {
-    	$('#waversBtn').hide();
-        
-    	}
-	});
 
 $('#leonardBtn').on('click',function(){
 	 $('html,body').animate({

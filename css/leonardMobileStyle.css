@@ -1,0 +1,123 @@
+@media (max-width: 40em){
+	.container.glassListing{
+		display:block;
+	}
+
+	.row{
+		width:100%;
+		margin:0;
+	}
+
+	.col-4of12{
+		width:100%;
+		padding:0;
+	}
+
+	.container.glassListing{
+		width:100%;
+		padding:0;
+	}
+
+	#backIcon{
+	font-size: 2rem;
+	margin-right: 20%;
+	margin-left: 4%;
+
+	}
+
+	#glassStoryShots{
+		display:none;
+	}
+	#productModal{
+		max-width:100%;
+		max-height:100%;
+		left:0;
+		margin-left:0;
+	}
+
+	#leftContent{
+		-webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+		width:100%;
+		height:80%;
+		position:absolute;
+		bottom:0;
+	}
+
+	.closeBtn{
+		top: 3%;
+		right: 5%;
+		color: white;
+		font-size: 2rem;
+		z-index: 2;
+	}
+
+	#rightContent img{
+		height:100%;
+		width:100%;
+	}
+	.productText p{
+		display:none;
+	}
+
+	.onTop{
+
+	width: 100%;
+	padding-top: 25%
+
+	}
+	#blueGlasses,#clearGlasses{
+	width: 65%;
+	height: 45%;
+	margin: 0 auto;
+
+	}
+
+	#swatchesContainer div{
+		width:9%;
+	}
+	#swatchesContainer{
+		height:7%;
+	}
+
+	#addBtn{
+	width: 70%;
+	margin-left: -35%;
+	margin-top: 10%;
+	}
+	#productPreviewText{
+		margin-top:-20%;
+	}	
+	#reviewSection{
+		margin-left:0;
+	}
+	#leftContent.comments{
+		-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+		clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		-webkit-animation: modalBoxMobile 0.25s; /* Chrome, Safari, Opera */
+	    animation: modalBoxMobile 0.25s;
+	    animation-fill-mode: forwards;
+	    -webkit-animation-fill-mode: forwards;
+	    transition:all 2s;
+
+	}
+
+
+@-webkit-keyframes modalBoxMobile {
+    0% {top:50%;}
+    100% {top:0%;}
+
+ 
+}
+
+/* Standard syntax */
+@keyframes modalBox {
+    from {left:0%;}
+    to {left:50%;}
+}
+
+}
