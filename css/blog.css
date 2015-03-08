@@ -1,20 +1,77 @@
+.section {        
+    position:absolute;
+    z-index:1;
+    height:500px;
+    width:100%;
+    background-attachment:fixed;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+}
+.content {
+    position:relative;
+    z-index:2;
+    background-color:rbga(255,255,255,0.4);  
+    height:50%;
+    margin-top:22%;
+}
+.section#s1 {
+    background-image: url("../img/BlogPics/blog5.jpg");   
+}
+
 .section-blog{
 	width:100%;
 	height:100%;
 	margin-top:10%;
-	margin-left: 20%;
-
 }
 
 .blogPost{
+	background-color:rgba(255,255,255,0.75);
 	position:absolute;
 	display:block;
-	width:60%;
+	width:100%;
+	padding-bottom:3em;
 }
 
-.individualPosts{
-	margin-top:2em;
+.subhead {
+	font-family: "Aleo", "Times New Roman", serif;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-transform: none;
+	color: #81997e;
+	font-size:1.5em;
+	line-height: 1.3em;
+	text-align:center;
+	margin-bottom:0.5em;
+	padding:0 7em 1.5em 7em;
 }
+
+.blog-image-wrapper{
+	padding:0 25%;
+}
+
+.individualPosts {
+  margin-top: 3em;
+}
+
+
+#customerInfoNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: auto;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  -o-box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.footer {
+	position:fixed;
+}
+
 
 /**image**/
 figure{
@@ -35,12 +92,17 @@ figure{
 
 /**text**/
 .blog-text-wrapper{
+	width:100%;
 	text-align:center;
+	padding:0 2em;
+	
 }
 .user-content{
 	position:relative;
 	display:block;
 	width:100%;
+	padding: 0 1em;
+	line-height: 1.25em;
 }
 figcaption{
 	font-size:0.75em;
@@ -55,13 +117,41 @@ figcaption{
 @media(max-width:30em){
 	.section-blog {
 		width: 100%;
-		height: 100%;
+		height: auto;
 		margin-top: 10%;
 		margin-left:0;
 	}
 	
+	.content {
+		margin-top:110%;
+	}
+	
 	.blogPost {
 		width: 100%;
-		padding:1em;
+		padding: 0 0.5em 0 0;
+	}
+	
+	.blogText p{
+		font-size: 1.1em;
+		line-height: 1.25em;
+	}
+	
+	.subhead {
+		padding:0;
+		font-size:1.2em;
+		margin-top:0.5em;
+	}
+	
+	.blog-text-wrapper {
+		padding: 0 2em 0 0;
+	}
+	
+	.individualPosts {
+		margin-top: 0em;
+	}
+	
+	.blog-image-wrapper {
+		margin-bottom: 5em;
+		padding: 0;
 	}
 }
