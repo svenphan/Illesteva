@@ -234,6 +234,25 @@
 	margin-left: 7%;
 }
 
+#fixedLeonards,
+#fixedMilan,
+#fixedWavers{
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+
+
+}
+
+#fixedLeonards:hover,
+#fixedMilan:hover,
+#fixedWavers:hover{
+	opacity:1 !important;
+	cursor:pointer;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+
+}
+
 #fixedGlassNav div{
 	padding-left:2%;
 	padding-right:2%;

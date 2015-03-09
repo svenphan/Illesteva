@@ -140,6 +140,11 @@ a{
 	transition:all 0.5s;
 }
 
+
+#navContainer .break{
+	padding-bottom:15%;
+
+}
 /*animated nav ends*/
 
 .background{
@@ -147,10 +152,95 @@ a{
 	height:100%;
 }
 
+.backgroundMobile{
+	display:none;
+}
+
 .background img{
 	height:100%;
 	width:100%;
 }
+
+.callToAction{
+	position: absolute;
+	width: 25%;
+	height: 17%;
+	background: white;
+	right: 1.5%;
+	bottom: 5%;
+	padding: 1%;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+}
+
+.callToAction:hover{
+	cursor:pointer;
+}
+.contentCallToAction{
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgb(121, 121, 121);
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+}
+
+.contentCallToAction div{
+	width: 35%;
+	height: 100%;
+	margin-left: 5%;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+}
+.contentCallToAction h4,
+.contentCallToAction h3{
+	  font-size: 1rem;
+  letter-spacing: 9px;
+  margin: 0;
+  margin-top: 5%;
+
+}
+.pageContainer{
+	position:relative;
+}
+.callToAction.hover{
+	width:20%;
+	height:13%;
+	background:black;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+}
+
+.ctaText{
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+	margin-top: 9%;
+	margin-left: 4%;
+}
+
+.ctaImg{
+	display: inline-block;
+
+}
+.ctaImg img{
+	width:100%;
+	height:100%;
+}
+
+.ctaAddBtn{
+	text-align:center;
+	color:white;
+	font-size:1.5rem;
+	width:100%;
+	height:100%;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	margin-top:12%;
+	font-family:"proximaNovaSemiBold";
+	letter-spacing:5px;
+
+}
+
 
 /*nav Container to switch Styles*/
 #productNav{

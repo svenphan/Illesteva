@@ -1,10 +1,17 @@
 
-@media(max-width:40em) {
+@media(max-width:60em) {
 .container{
 	margin:0;
 	padding:0;
 }
 
+.backgroundDesktop{
+	display:none;
+}
+
+.backgroundMobile{
+	display:block;
+}
 /*Product Navigation- Mens,Womens,Umbrellas*/
 .pageContainer{
 	width:100%;
@@ -233,6 +240,8 @@
 	  transform: rotate(-45deg);
 	}
 
-
+	.callToAction{
+		display:none;
+	}
 
 }
