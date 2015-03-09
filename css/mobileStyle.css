@@ -1,5 +1,290 @@
+@media(max-width:1024px){
 
-@media(max-width:60em) {
+.glassStyles{
+	width: 75%;
+	margin-top: 11%;
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
+	height: 55%;
+	padding-right: 3%;
+	z-index: 1;
+	position: relative;
+}
+
+.styleInfoContainer p{
+	font-size:0.9rem;
+}
+.styleInfoContainer h4{
+	font-size:2rem;
+}
+
+#productModal{
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  max-width: 85%;
+  max-height: 80%;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  margin-left: -42.5%;
+  margin-top: 7%;
+
+}
+
+
+}
+
+/*-------------------Portrait------------------------------*/
+@media(max-width:768px){
+.container{
+	margin:0;
+	padding:0;
+}
+
+.backgroundDesktop{
+	display:none;
+}
+
+.backgroundMobile{
+	display:block;
+}
+/*Product Navigation- Mens,Womens,Umbrellas*/
+.pageContainer{
+	width:100%;
+	height:50%;
+}
+	.mobileProductNav{
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+}
+	#productNav{
+		display:none;
+	}
+	
+	.mobileProductNav li{
+	cursor: pointer;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	font-size: 2.15rem;
+	font-family:"proximaNovaSemiBold";
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;
+	}
+
+	.mobileProductNav li a{
+		color:black;
+
+	}
+	#customerInfoNav{
+		z-index:5;
+	}
+
+	#fixedGlassNav{
+		display:none;
+	}
+/*footer*/
+	.footer{
+		padding: 3%;
+	}
+	#footer-menu{
+	width: 100%;
+	text-align: center;
+	font-size: 1.15rem;
+	padding: 0;
+	}
+	#footer-info{
+		display:none;
+	}
+	#footer-menu>li {
+		display: inline-block;
+		padding:0.25em;
+	}
+	#footer-info{
+		float:right;
+		padding-left: 40%;
+		bottom: 1em;
+	}
+	
+	.fieldset{
+		width:100%;
+		height: auto;
+		border:0 none;
+		box-sizing: border-box;
+		padding: 10px 30px;
+		margin-top: 1em;
+		right:0;
+		left:0;
+		position: absolute;
+		background-color: white;
+		z-index: 10;
+	}
+
+/*END*/
+
+/*MENS PRODUCT LISTING STYLE*/
+	.glassStyles{
+		width: 100%;
+		height: 100%;
+}
+	.glassStyles .row{
+		height:33.3333%;
+		width:100%;
+		margin:0;
+		padding:0;
+		margin-top:11%;
+	}
+
+	.glassStyles .row .col-4of12{
+		width:100%;
+		height:100%;
+	}
+
+	.glassListing{
+		display:none;
+	}
+
+	.seeMoreBtn{
+		display:none !important;
+	}
+
+	div#Leonards:hover,
+	div#Milan:hover,
+	div#Wavers:hover{
+		border:none;
+	}
+
+	.leonardsMobile,
+	.milanMobile,
+	.waversMobile{
+	display:block;
+
+	}
+
+	.leonardsDesktop,
+	.milanDekstop,
+	.waversDesktop{
+		display:none;
+	}
+
+	
+	.styleInfoContainer h4{
+		font-size:2.5rem;
+	}
+
+	.styleInfoContainer p{
+		font-size:0.9rem;
+	}
+
+	.styleInfoContainer{
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		height: 54px;
+		margin-top: -22px;
+	}
+
+/*ENDS*/
+/*modal*/
+	.mobileModal{
+		display:none;
+	}
+
+
+/*ends*/
+	.submitButton{
+		background: black;
+		color: white;
+	}
+
+	#navContainer{
+		visibility: hidden;
+	}
+	.first img{
+		width: 50%;
+		height:auto;
+	}
+
+	#logo{
+	max-width: 35%;
+	width: 100%;
+	display: inline-block;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	/* left: 50%; */
+	transition: all 0.5s
+	}
+
+	#signInLink,
+	#contactLink
+	{
+		display:none;
+	}
+
+	.customerInfoContainer li{
+		margin-top: 4%;
+		float: right;
+		margin-right: 26%;
+		font-size:2.5rem;
+	}
+
+	/*hamburger*/
+
+	#nav-toggle { 
+		cursor: pointer; 
+		float: left;
+		width: auto;
+		height: 100%;
+		margin-top: 9%;
+		margin-bottom: 9%;
+		margin-right: 25%;
+		margin-left: 6%;
+
+	}
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	  cursor: pointer;
+	  height: 5px;
+	  width: 25px;
+	  background: black;
+	  position: absolute;
+	  display: block;
+	  content: '';
+	}
+	#nav-toggle span:before {
+	  top: -10px; 
+	}
+	#nav-toggle span:after {
+	  bottom: -10px;
+	}
+
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	  transition: all 1s ease-in-out;
+	}
+	#nav-toggle.active span {
+	  background-color: transparent;
+	}
+	#nav-toggle.active span:before, #nav-toggle.active span:after {
+	  top: 0;
+	}
+	#nav-toggle.active span:before {
+	  transform: rotate(45deg);
+	}
+	#nav-toggle.active span:after {
+	  transform: rotate(-45deg);
+	}
+
+	.callToAction{
+		display:none;
+	}
+
+}
+/*-------------------IPHONE------------------------------*/
+@media(max-width:30em) {
 .container{
 	margin:0;
 	padding:0;
@@ -225,7 +510,7 @@
 	}
 
 	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-	  transition: all 500ms ease-in-out;
+	  transition: all 1s ease-in-out;
 	}
 	#nav-toggle.active span {
 	  background-color: transparent;
