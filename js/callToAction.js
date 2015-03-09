@@ -5,12 +5,12 @@ $(document).ready(function(){
 
 	$(".callToAction").on({ 
 	mouseenter: function () {
-		$(".callToAction").addClass('hover');
+		$(this,".callToAction").addClass('hover');
         $('.ctaAddBtn').fadeIn();
         $('.contentCallToAction').hide();
    	},
     mouseleave: function () {
-    	$(".callToAction").removeClass('hover');
+    	$(this,".callToAction").removeClass('hover');
 		$('.ctaAddBtn').hide();
 		$('.contentCallToAction').show();
     	}
