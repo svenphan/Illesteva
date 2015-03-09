@@ -9,7 +9,7 @@
 	}
 
 	.col-4of12{
-		width:100%;
+		width:50%;
 		padding:0;
 	}
 
@@ -39,6 +39,7 @@
 	#glassStoryShots{
 		display:none;
 	}
+
 	#productModal{
 		max-width:100%;
 		max-height:100%;
@@ -105,6 +106,10 @@
 	#productPreviewText{
 		margin-top:-20%;
 	}	
+
+	#productPreviewText h3{
+		margin:2%;
+	}
 	#reviewSection{
 		margin-left:0;
 		margin-top:15%;
@@ -199,7 +204,12 @@
 	.container.glassListing{
 		display:block;
 	}
-
+	.userProfileText{
+		font-size:1rem;
+	}
+	#userContainer p{
+		font-size:0.75rem;
+	}
 	.row{
 		width:100%;
 		margin:0;
