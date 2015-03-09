@@ -85,7 +85,7 @@
 
 .glassListing h4,
 .productText h3,
-#productPreviewText h3{
+{
 	margin-top:5%;
 	font-size:0.9rem;
 	letter-spacing:10px;
@@ -509,7 +509,7 @@ article {
 }
 
 
-#glassShots{
+#glassStoryShots{
 	position: absolute;
 	bottom: 5%;
 	right: 14%;
