@@ -133,6 +133,11 @@
 	cursor:pointer;
 }*/
 
+.leonardsMobile,
+.milanMobile,
+.waversMobile{
+	display:none;
+}
 #Leonards{
 	background-image: url("../img/classicLeonard.jpg");
   background-position: center;
