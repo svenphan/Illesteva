@@ -389,6 +389,8 @@ a.dd-toggle:active,a.dd-toggle:hover{
 	-o-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
 	border-radius: 3px;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	padding: 10px 30px;
 	position: absolute;
 	width: 300px;
@@ -420,6 +422,8 @@ textarea{
 	width: 100%;
 	overflow: hidden;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	font-family: montserrat;
 	color: #2C3E50;
 	font-size: 13px;
