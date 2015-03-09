@@ -79,10 +79,6 @@
 		z-index: 10;
 	}
 
-	li#footerAbout,
-	li#footerBlog{
-		display:none;
-	}
 /*END*/
 
 /*MENS PRODUCT LISTING STYLE*/
@@ -125,7 +121,7 @@
 	}
 
 	.leonardsDesktop,
-	.milanDesktop,
+	.milanDekstop,
 	.waversDesktop{
 		display:none;
 	}
@@ -149,7 +145,13 @@
 	}
 
 /*ENDS*/
+/*modal*/
+	.mobileModal{
+		display:none;
+	}
 
+
+/*ends*/
 	.submitButton{
 		background: black;
 		color: white;

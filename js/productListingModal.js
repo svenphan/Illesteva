@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('#leonardsStory').css({'opacity':'1'});
-	$('.seeMoreBtn,#modalBG,#reviewSection,#clearGlasses').hide();
+	$('.seeMoreBtn,#modalBG,#reviewSection,#clearGlasses,#fixedGlassNav').hide();
 	$('#leonards').on('click',function(){
 		$('#modalBG').show();
 		$('body').css({'overflow': 'hidden','height': '100%'});
@@ -45,6 +45,8 @@ $('#waversBtn').on('click',function(){
 $("#comments").click(function() {
 	$('#leftContent').addClass('comments');
 	$('.closeBtn').addClass('comments')
+	$(this).css({'color': 'black'});
+	$('#viewProduct').css({'color': '#bbb'});
 	$('.eyeGlassContainer').hide();
 	$('#reviewSection').show();
 	$('#glassStoryShots').fadeOut();
@@ -59,6 +61,8 @@ $("#viewProduct").click(function() {
 	$('#leftContent').removeClass('comments');
 	$('#leftContent').addClass('productView');
 	$('.closeBtn').removeClass('comments')
+	$(this).css({'color': 'black'});
+	$('#comments').css({'color': '#bbb'});
 	$('.eyeGlassContainer').show();
 	$('#reviewSection').hide();
 	$('#glassStoryShots').fadeIn();
@@ -68,6 +72,21 @@ $("#viewProduct").click(function() {
 	  }).fadeTo(1000,1);
 	  return false;
 });
+
+$(".reviewBack").click(function() {
+	$('#leftContent').removeClass('comments');
+	$('#leftContent').addClass('productView');
+	$('.closeBtn').removeClass('comments')
+	$('.eyeGlassContainer').show();
+	$('#reviewSection').hide();
+	$('#glassStoryShots').fadeIn();
+	$('#storyBackground').css({'width': '100%'});
+	$("#storyBackground").fadeTo(0.6,0.10, function() {
+	      $("#storyBackground").attr("src","img/modal/mensLeonards1_2Mobile.png");
+	  }).fadeTo(1000,1);
+	  return false;
+});
+
 
 
 $('.closeBtn').on('click',function(){

@@ -17,7 +17,8 @@
 	</head>
 	<body>
 		
-				<!--borders-->
+
+		<!--borders-->
 		<div class="leftBorder"></div>
 		<div class="rightBorder"></div>
 		<div class="bottomBorder"></div>
@@ -30,7 +31,7 @@
 				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
 			</div>
 			<ul class="customerInfoContainer">
-				<li><a class="contact-bg dd-toggle">SIGN IN</a>
+				<li id="signInLink"><a class="contact-bg dd-toggle">SIGN IN</a>
 					<ul class="dd-hidden">
 
 					<li><div class="fieldset">
@@ -69,7 +70,7 @@
 					</ul>
 				</li>
 
-				<li><a class="contact-bg dd-toggle">CONTACT</a>
+				<li id="contactLink"><a class="contact-bg dd-toggle">CONTACT</a>
 			      	<ul class="dd-hidden">
 					<li><div class="fieldset">
 					    <h2 class="fs-title">Question/Comment?</h2>
@@ -122,13 +123,21 @@
 								<p class="tax">Plus 12%: $24</p>
 								<div class="total">Total:$224.00</div>
 
-						   		<div class="checkoutButton">Checkout</div>
+						   		<a href="checkout.html"><div class="checkoutButton">Checkout</div></a>
 						</div></li>
 
 					</ul>
 					
 				</li>
 
+			</ul>
+			<ul class="mobileProductNav">
+				<li><a href="#">Collaborations</a></li>
+                <li><a href="mensStyle.html">Mens</a></li>
+                <li><a href="#">Womens</a></li>
+                <li><a href="#">Bags</a></li><br />
+                <li><a href="#">Sign In</a></li>
+               	<li><a href="contactMobile.html">Contact</a></li>
 			</ul>
 		</nav>
 		
@@ -144,6 +153,7 @@
 				<div class="LogInSection">
 					
 					<div class="fieldset2">
+					<h2 class="fs-title">Checkout</h2>
 						<!----->	
 						<div class="emailSection">
 							<div class="headerCat"><h4>Enter Your Email</h4></div>
@@ -222,7 +232,7 @@
 					<div class="fieldset2">
 						<!----->		
 						<div class="billingSection">
-							<div class="headerCat"><h4>Enter Your Email</h4></div>
+							<div class="headerCat"><h4>Shipping</h4></div>
 					    	<div class="shipping"> 
 						        <form>
 								<input type="radio" name="shipping" id="ship1">UPS Standard - Delivery within 3-6 business days, 15.00 Usd<br>

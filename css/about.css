@@ -134,6 +134,7 @@ p:first-of-type {
 	}
 	#aboutTextStuff {
 		padding: 0 1em;
+		margin-bottom:50%;
 	}
 	.aboutText{
 		width:100%;

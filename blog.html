@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/mobileStyle.css">
-	<title>Illesteva | Blog</title>
+	<title>Illesteva | About</title>
 	</head>
 	<body>
+		
 		
 		<!--borders-->
 		<div class="leftBorder"></div>
@@ -30,7 +31,7 @@
 				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
 			</div>
 			<ul class="customerInfoContainer">
-				<li><a class="contact-bg dd-toggle">SIGN IN</a>
+				<li id="signInLink"><a class="contact-bg dd-toggle">SIGN IN</a>
 					<ul class="dd-hidden">
 
 					<li><div class="fieldset">
@@ -69,7 +70,7 @@
 					</ul>
 				</li>
 
-				<li><a class="contact-bg dd-toggle">CONTACT</a>
+				<li id="contactLink"><a class="contact-bg dd-toggle">CONTACT</a>
 			      	<ul class="dd-hidden">
 					<li><div class="fieldset">
 					    <h2 class="fs-title">Question/Comment?</h2>
@@ -122,7 +123,7 @@
 								<p class="tax">Plus 12%: $24</p>
 								<div class="total">Total:$224.00</div>
 
-						   		<div class="checkoutButton">Checkout</div>
+						   		<a href="checkout.html"><div class="checkoutButton">Checkout</div></a>
 						</div></li>
 
 					</ul>
@@ -130,99 +131,114 @@
 				</li>
 
 			</ul>
+			<ul class="mobileProductNav">
+				<li><a href="#">Collaborations</a></li>
+                <li><a href="mensStyle.html">Mens</a></li>
+                <li><a href="#">Womens</a></li>
+                <li><a href="#">Bags</a></li><br />
+                <li><a href="#">Sign In</a></li>
+                <li><a href="contactMobile.html">Contact</a></li>
+			</ul>
 		</nav>
-		
-		<!-----------BLOG CONTENT--------------->
-		
-		<div class="pageContainer">
-		<div class="background">
-		<div class="section-blog">
-			<!--blog Image on left-->
-			<div class="blogPost">
-				<div class="individualPosts">
-					<div class="blog-text-wrapper">
-						<h1 class="blogTitle">Fun in the Sun</h1>
-					</div>	
-					
-					<div class="blog-image-wrapper">
-						<figure>
-						<img class="blog1" src="img/BlogPics/blog2.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
-						<figcaption>Posted on February 9, 2015 by Administrator</figcaption>
-						</figure>
-						
-						<div class="user-content">
-							<p class="blogText">To escape from the dreadful NYC winter, we took a trip down to Tulum, Mexico. Just two hours south of the popular resort mecca of Cancun, Tulum offers a refreshing change from other 5-star, cookie-cutter hotels of Yucatan Peninsula. Instead, you will find a perfect harmony of authentic Mexico and the amenities of a luxe paradise.</p>
-						</div>   
-					</div> 
+    <!--BLOG CONTENT-->
 
-					<div class="blog-image-wrapper">
-						<figure>
-						<img class="blog1" src="img/BlogPics/blog3.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
-						<figcaption>Posted on February 9, 2015 by Administrator</figcaption>
-						</figure>
-						
-						<div class="user-content">
-							<p class="blogText">To escape from the dreadful NYC winter, we took a trip down to Tulum, Mexico. Just two hours south of the popular resort mecca of Cancun, Tulum offers a refreshing change from other 5-star, cookie-cutter hotels of Yucatan Peninsula. Instead, you will find a perfect harmony of authentic Mexico and the amenities of a luxe paradise.</p>
-						</div>   
-					</div> 
-				</div>
-				
-				<div class="individualPosts">
-					<div class="blog-text-wrapper">
-						<h1 class="blogTitle">Check out our Valentine’s Crushes </h1>
-					</div>	
-					
-					<div class="blog-image-wrapper">
-						<figure>
-						<img class="blog1" src="img/BlogPics/blog4.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
-						<figcaption>Posted on February 9, 2015 by Administrator</figcaption>
-						</figure>
-						
-						<div class="user-content">
-							<p>Founded in 2010, ILLESTEVA glasses are handmade in France and Italy, in concert with the world's leading manufactuers of luxury eyewear.</p>
-							<p class="blogText">To escape from the dreadful NYC winter, we took a trip down to Tulum, Mexico. Just two hours south of the popular resort mecca of Cancun, Tulum offers a refreshing change from other 5-star, cookie-cutter hotels of Yucatan Peninsula. Instead, you will find a perfect harmony of authentic Mexico and the amenities of a luxe paradise.</p>
-						</div>   
-					</div>   
-				</div>
-			</div>	
-		</div>
-		</div>
-		</div>
+    <div class="pageContainer">
+        <div class="background">
+            <div class="section-blog">
+                <!--blog Image on left-->
+                <div class="blogPost">
+                    <div class="section" id="s1">
+                        <div class="content" id="c1">
+                            <div class="blogPost">
+                                <!--a new post-->
+                                <div class="individualPosts">
+                                    <div class="blog-text-wrapper">
+										<p class="subhead">Proin faucibus porta nibh, quis vehicula nibh fermentum ut. Sed cursus nulla at magna vestibulum, vel porttitor lacus tristique. Aenean consectetur mi sed tristique interdum. Cras ac est vitae tellus pulvinar faucibus.</p>
+                                    </div>
 
-		<!-----------BLOG END CONTENT--------------->
-		
-<!--FOOTER STARTS-->
-	<footer class="footer">
-		<div class="row">
-			<nav class="nav">
-				<ul id="footer-menu">
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="about.html">About</a></li>
-								
-					<li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" id="icon"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://twitter.com/illesteva" target="_blank" id="icon"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://instagram.com/illesteva" target="_blank" id="icon"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-				
-				<div id="footer-info" class="nav">
-					© 2015 Illesteva&nbsp;&nbsp;All rights reserved
-				</div>		
-			</nav>
-			
-		</div>
-	</footer>
+                                    <div class="blog-image-wrapper">
+                                        <figure>
+                                            <img class="blog1" src="img/BlogPics/blog4.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
+                                            <figcaption>Posted on February 9, 2015 by Administrator</figcaption>
+                                        </figure>
 
-	<!--FOOTER ENDS-->
+                                        <div class="user-content">
+                                            <p class="blogText">To escape from the dreadful NYC winter, we took a trip down to Tulum, Mexico. Just two hours south of the popular resort mecca of Cancun, Tulum offers a refreshing change from other 5-star, cookie-cutter hotels of Yucatan Peninsula. Instead, you will find a perfect harmony of authentic Mexico and the amenities of a luxe paradise.</p>
+                                        </div>
+                                    </div>
 
-	<script src="js/jquery.js"></script>
+                                    <div class="blog-image-wrapper">
+                                        <figure>
+                                            <img class="blog1" src="img/BlogPics/blog3.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
+                                            <figcaption>Posted on February 9, 2015 by Administrator</figcaption>
+                                        </figure>
+
+                                        <div class="user-content">
+                                            <p class="blogText">To escape from the dreadful NYC winter, we took a trip down to Tulum, Mexico. Just two hours south of the popular resort mecca of Cancun, Tulum offers a refreshing change from other 5-star, cookie-cutter hotels of Yucatan Peninsula. Instead, you will find a perfect harmony of authentic Mexico and the amenities of a luxe paradise.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------a new post--------->
+                                <div class="individualPosts">
+                                    <div class="blog-text-wrapper">
+                                        <h1 class="blogTitle">Check out our Valentine’s Crushes </h1>
+                                    </div>
+
+                                    <div class="blog-image-wrapper">
+                                        <figure>
+                                            <img class="blog1" src="img/BlogPics/blog6.jpg" alt="4 tiled long blonde hair model posing with sunglasses making faces">
+                                            <figcaption>Posted on February 9, 2015 by Administrator</figcaption>
+                                        </figure>
+
+                                        <div class="user-content">
+                                            <p>Nullam porta augue dolor, eleifend interdum sem semper ut. In auctor, nunc mollis mollis rutrum, neque nulla porta enim, eget finibus orci ante at quam. Vestibulum eleifend ante viverra nunc feugiat rutrum. Vivamus laoreet dui in interdum interdum. Integer laoreet diam vel purus maximus ullamcorper. Proin et mollis sem. Nunc interdum eu erat commodo ultricies.</p>
+                                            <p class="blogText">Etiam egestas tempus erat ut mollis. Donec laoreet eget purus laoreet suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel tortor non turpis egestas interdum. Ut non elit et massa bibendum ultrices. Fusce sagittis nibh non lorem laoreet, eget tincidunt augue porttitor. Morbi sagittis interdum elit id molestie. Cras sit amet egestas felis. Aliquam ullamcorper laoreet arcu, vitae porttitor nisl commodo vel. Nullam malesuada metus eget lectus molestie malesuada.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------BLOG END CONTENT--------------->
+
+    <!--FOOTER STARTS-->
+    <footer class="footer">
+        <div class="row">
+            <nav class="nav">
+                <ul id="footer-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" id="icon"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/illesteva" target="_blank" id="icon"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/illesteva" target="_blank" id="icon"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+
+                <div id="footer-info" class="nav">
+                    © 2015 Illesteva&nbsp;&nbsp;All rights reserved
+                </div>
+            </nav>
+
+        </div>
+    </footer>
+
+    <!--FOOTER ENDS-->
+
+    <script src="js/jquery.js"></script>
     <script src="js/drop-downs.js"></script>
-     <script src="js/productListingModal.js"></script>
-     <script src="js/fixedNav.js"></script>
-	 <script src="js/hamburger.js"></script>
-	<script src="js/animatedDD.js"></script>
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
-	<script src="js/googleMap.js"></script>
-	</body>
+    <script src="js/productListingModal.js"></script>
+    <script src="js/fixedNav.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/animatedDD.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/googleMap.js"></script>
+</body>
 
 
 </html>
