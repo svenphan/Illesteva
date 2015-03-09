@@ -30,7 +30,7 @@ $('#milanBtn').on('click',function(){
 });
 $('#waversBtn').on('click',function(){
 	 $('html,body').animate({
-        scrollTop: $("#Wavers").offset().top -60},
+        scrollTop: $("#waversSection").offset().top -60},
         1000);
 });
 
