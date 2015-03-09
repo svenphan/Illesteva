@@ -336,11 +336,11 @@ textarea{
 	margin-top: 0.5em;
 }
 .item{
-max-width: 250px;
-border-bottom:solid 1px;
-display:inline-block;
-margin-top:0.25em;
-padding: 0.25em 0;
+	max-width: 250px;
+	border-bottom:solid 1px;
+	display:inline-block;
+	margin-top:0.25em;
+	padding: 0.25em 0;
 }
 
 
@@ -379,21 +379,13 @@ input:active,input:focus{
 }
 
 
-<<<<<<< HEAD
+/*Levona Changed**************/
 .submitButton{
 	text-align: center;
 	padding: 1em 2em;
 	border: 1px solid black;
 	font-size: 1rem;
 	margin-top: 1em;
-=======
-.submitButton {
-  text-align: center;
-  padding: 1em;
-  border: 1px solid black;
-  font-size: 1rem;
-  margin-top: 0.5px;
->>>>>>> origin/master
 }
 
 .submitButton:hover{
