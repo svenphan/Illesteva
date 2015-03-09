@@ -30,7 +30,7 @@ $('#milanBtn').on('click',function(){
 });
 $('#waversBtn').on('click',function(){
 	 $('html,body').animate({
-        scrollTop: $("#Wavers").offset().top -60},
+        scrollTop: $("#waversSection").offset().top -60},
         1000);
 });
 
@@ -50,9 +50,9 @@ $("#comments").click(function() {
 	$('.eyeGlassContainer').hide();
 	$('#reviewSection').show();
 	$('#glassStoryShots').fadeOut();
-	$('#storyBackground').css({'width': '100%'});
-	$("#storyBackground").fadeTo(0.6,0.10, function() {
-	      $("#storyBackground").attr("src","img/modal/andrewmarc.png");
+	$('.storyBackground').css({'width': '100%'});
+	$(".storyBackground").fadeTo(0.6,0.10, function() {
+	      $(".storyBackground").attr("src","img/modal/andrewmarc.png");
 	  }).fadeTo(1000,1);
 	  return false;
 });
@@ -66,9 +66,9 @@ $("#viewProduct").click(function() {
 	$('.eyeGlassContainer').show();
 	$('#reviewSection').hide();
 	$('#glassStoryShots').fadeIn();
-	$('#storyBackground').css({'width': '100%'});
-	$("#storyBackground").fadeTo(0.6,0.10, function() {
-	      $("#storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
+	$('.storyBackground').css({'width': '100%'});
+	$(".storyBackground").fadeTo(0.6,0.10, function() {
+	      $(".storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
 	  }).fadeTo(1000,1);
 	  return false;
 });
@@ -79,10 +79,12 @@ $(".reviewBack").click(function() {
 	$('.closeBtn').removeClass('comments')
 	$('.eyeGlassContainer').show();
 	$('#reviewSection').hide();
+	$('#leonardsStory').css({'opacity':'1'});
+	$('#leonardsThreeStory,#leonardsTwoStory').css({'opacity':'0.5'});
 	$('#glassStoryShots').fadeIn();
-	$('#storyBackground').css({'width': '100%'});
-	$("#storyBackground").fadeTo(0.6,0.10, function() {
-	      $("#storyBackground").attr("src","img/modal/mensLeonards1_2Mobile.png");
+	$('.storyBackground').css({'width': '100%'});
+	$(".storyBackground").fadeTo(0.6,0.10, function() {
+	      $(".storyBackground").attr("src","img/modal/mensLeonards1_2Mobile.png");
 	  }).fadeTo(1000,1);
 	  return false;
 });
@@ -96,9 +98,9 @@ $('.closeBtn').on('click',function(){
 	$('#reviewSection').hide();
 	$('.eyeGlassContainer').show();
 	$('#glassStoryShots').fadeIn();
-	$('#storyBackground').css({'width': '93%'});
-	$("#storyBackground").fadeTo(0.6,0.10, function() {
-	      $("#storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
+	$('.storyBackground').css({'width': '93%'});
+	$(".storyBackground").fadeTo(0.6,0.10, function() {
+	      $(".storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
 	  }).fadeTo(1000,1);
 	  return false;
 })
@@ -153,8 +155,8 @@ $('#blue').on('click',function(){
 $("#leonardsStory").click(function() {
 	$('#leonardsStory').css({'opacity':'1'});
 	$('#leonardsThreeStory,#leonardsTwoStory').css({'opacity':'0.5'});
-	  $("#storyBackground").fadeTo(0.6,0.10, function() {
-	      $("#storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
+	  $(".storyBackground").fadeTo(0.6,0.10, function() {
+	      $(".storyBackground").attr("src","img/modal/mensLeonards1_2.jpg");
 	  }).fadeTo(1000,1);
 	  return false;
 });
@@ -163,8 +165,8 @@ $("#leonardsStory").click(function() {
 $("#leonardsThreeStory").click(function() {
 	$('#leonardsThreeStory').css({'opacity':'1'});
 	$('#leonardsTwoStory,#leonardsStory').css({'opacity':'0.5'});
-	  $("#storyBackground").fadeTo(0.6,0.10, function() {
-	      $("#storyBackground").attr("src","img/modal/mensLeonards3.jpg");
+	  $(".storyBackground").fadeTo(0.6,0.10, function() {
+	      $(".storyBackground").attr("src","img/modal/mensLeonards3.jpg");
 	  }).fadeTo(1000,1);
 	  return false;
 });
@@ -172,8 +174,8 @@ $("#leonardsThreeStory").click(function() {
 $("#leonardsTwoStory").click(function() {
 	$('#leonardsTwoStory').css({'opacity':'1'});
 	$('#leonardsThreeStory,#leonardsStory').css({'opacity':'0.5'});
-	  $("#storyBackground").fadeTo(0.6,0.10, function() {
-	      $("#storyBackground").attr("src","img/modal/Leonards2.jpg");
+	  $(".storyBackground").fadeTo(0.6,0.10, function() {
+	      $(".storyBackground").attr("src","img/modal/Leonards2.jpg");
 	  }).fadeTo(1000,1);
 	  return false;
 });

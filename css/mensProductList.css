@@ -234,6 +234,25 @@
 	margin-left: 7%;
 }
 
+#fixedLeonards,
+#fixedMilan,
+#fixedWavers{
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+
+
+}
+
+#fixedLeonards:hover,
+#fixedMilan:hover,
+#fixedWavers:hover{
+	opacity:1 !important;
+	cursor:pointer;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+
+}
+
 #fixedGlassNav div{
 	padding-left:2%;
 	padding-right:2%;
@@ -369,6 +388,24 @@ article {
 	letter-spacing: 3px;
 
 }
+.addBtn h3{
+	margin: 0;
+	padding: 5%;
+	font-size: 1rem;
+	letter-spacing: 3px;
+}
+
+.addBtn{
+	width: 50%;
+  border: 2px solid black;
+  position: relative;
+  left: 50%;
+  margin-left: -25%;
+  text-align: center;
+  transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+
+}
 
 #addBtn{
   width: 50%;
@@ -378,6 +415,15 @@ article {
   margin-left: -25%;
   text-align: center;
   transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+
+}
+
+.addBtn:hover{
+	background:black;
+	color:white;
+	cursor:pointer;
+	transition:all 1s ease-in-out;
 	-webkit-transition:all 1s ease-in-out;
 
 }
@@ -463,7 +509,7 @@ article {
 }
 
 
-#glassStoryShots{
+#glassShots{
 	position: absolute;
 	bottom: 5%;
 	right: 14%;
@@ -563,6 +609,14 @@ article {
 
 
 #rating i{
+	display:inline-block;
+}
+
+.rating{
+	margin-bottom:4%;
+}
+
+.rating i{
 	display:inline-block;
 }
 
