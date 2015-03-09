@@ -388,6 +388,24 @@ article {
 	letter-spacing: 3px;
 
 }
+.addBtn h3{
+	margin: 0;
+	padding: 5%;
+	font-size: 1rem;
+	letter-spacing: 3px;
+}
+
+.addBtn{
+	width: 50%;
+  border: 2px solid black;
+  position: relative;
+  left: 50%;
+  margin-left: -25%;
+  text-align: center;
+  transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+
+}
 
 #addBtn{
   width: 50%;
@@ -397,6 +415,15 @@ article {
   margin-left: -25%;
   text-align: center;
   transition:all 1s ease-in-out;
+	-webkit-transition:all 1s ease-in-out;
+
+}
+
+.addBtn:hover{
+	background:black;
+	color:white;
+	cursor:pointer;
+	transition:all 1s ease-in-out;
 	-webkit-transition:all 1s ease-in-out;
 
 }
@@ -482,7 +509,7 @@ article {
 }
 
 
-#glassStoryShots{
+#glassShots{
 	position: absolute;
 	bottom: 5%;
 	right: 14%;
@@ -582,6 +609,14 @@ article {
 
 
 #rating i{
+	display:inline-block;
+}
+
+.rating{
+	margin-bottom:4%;
+}
+
+.rating i{
 	display:inline-block;
 }
 
