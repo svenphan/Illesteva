@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+	 <link rel="stylesheet" href="css/style.css">
     <!--animates the tab menus-->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/mobileStyle.css">
-    <link rel="stylesheet" href="css/footerStyle.css">
-	<title>Illesteva | Made in Italy.</title>
+	<title>Illesteva | Contact Us</title>
 	</head>
 	<body>
 		
@@ -31,7 +31,7 @@
 			</div>
 			<ul class="customerInfoContainer">
 				<li id="signInLink"><a class="contact-bg dd-toggle">SIGN IN</a>
-					<ul id="signInModal" class="dd-hidden">
+					<ul class="dd-hidden">
 
 					<li><div class="fieldset">
 						<h2 class="fs-title">Already A Member?</h2>
@@ -42,32 +42,35 @@
 						        <input type="password" class="form-acct" placeholder="Password">
 						    </div>
 						    <div class="submitButton" id="FirstSubmit">Log-In</div>
-												
-						<h2 class="fs-title" id="first-fs-title">Create An Account</h2>
-							<div class="inputwrapper"> 
-								<input type="text" class="form-acct" placeholder="First Name">
-							</div>
-							<div class="inputwrapper"> 
-								<input type="text" class="form-acct" placeholder="Last Name">
-							</div>
-							<div class="inputwrapper"> 
-								<input type="text" class="form-acct" placeholder="Email Address">
-							</div>
-							<div class="inputwrapper"> 
-								<input type="password" class="form-acct" placeholder="Password">
-							</div>
-							 <div class="inputwrapper"> 
-								<input type="password" class="form-acct" placeholder="Confirm Password">
-							</div>
 							
-							<div class="submitButton">Submit</div>
+							<div class="createAccnt dd-toggle"><a href="">New? Create An Account</a></div>
+							<!--hidden unless clicked-->
+							
+								<h2 class="fs-title" id="first-fs-title">Create An Account</h2>
+									<div class="inputwrapper"> 
+										<input type="text" class="form-acct" placeholder="First Name">
+									</div>
+									<div class="inputwrapper"> 
+										<input type="text" class="form-acct" placeholder="Last Name">
+									</div>
+									<div class="inputwrapper"> 
+										<input type="text" class="form-acct" placeholder="Email Address">
+									</div>
+									<div class="inputwrapper"> 
+										<input type="password" class="form-acct" placeholder="Password">
+									</div>
+									 <div class="inputwrapper"> 
+										<input type="password" class="form-acct" placeholder="Confirm Password">
+									</div>
+									
+									<div class="submitButton">Submit</div>
 					</div></li>
 
 					</ul>
 				</li>
 
 				<li id="contactLink"><a class="contact-bg dd-toggle">CONTACT</a>
-			      	<ul id="contactModal" class="dd-hidden">
+			      	<ul class="dd-hidden">
 					<li><div class="fieldset">
 					    <h2 class="fs-title">Question/Comment?</h2>
 					      <div class="inputwrapper"> 
@@ -94,9 +97,9 @@
 				</li>
 
 
-				<li id="shoppingBagLink">
+				<li>
 					<a class="fa fa-shopping-cart dd-toggle"></a>
-					<ul id="shopBagModal" class="dd-hidden">
+					<ul class="dd-hidden">
 						<li><div class="fieldset">
 						    <h2 class="fs-title">Your Cart</h2>
 								<div class="item">
@@ -133,37 +136,51 @@
                 <li><a href="#">Womens</a></li>
                 <li><a href="#">Bags</a></li><br />
                 <li><a href="#">Sign In</a></li>
-                <li><a href="contactMobile.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
-		<!--Product Navigation-->
-		<nav id="productNav">
-			<div id="navContainer">
-				<ul>
-					<li><a href="#">Collaborations</a></li>
-					<li><a href="#">Trending</a></li><br />
-					<li><a href="mensStyle.html">Mens</a></li>
-					<li><a href="#">Womens</a></li>
-					<li><a href="#">Bags</a></li>
-				</ul>
-			</div>
-		</nav>
+		
+		<!-----------CHECKOUT CONTENT--------------->
+		
+		<div class="pageContainer">	<!--changed to class or else error-->
+		<div class="background">
+		<div class="container section-checkout">
+			
+			<div class="header"><h1>Contact Us</h1></div>
+			<!--1/3-->
+			<div class="col-4of12">
+				<div class="LogInSection">
+					<div class="fieldset2">
+						<h2 class="fs-title">Questions or Comments?</h2>
+						  <div class="inputwrapper"> 
+							<h5>Name</h5>
+							<input type="text" class="form" placeholder="Jane Doe">
+						  </div>
 
+						  <div class="inputwrapper">
+							<h5>Subject</h5>
+							<input type="text" class="form" placeholder="A title for your comment">
+						  </div>
 
-			<div class="pageContainer">	<!--changed to class or else error-->
-				<div class="background">
-					<img src="img/illestevaBackground.jpg" ="woman  wearing white dress and black and white striped sunglasses posing and looking down to the right" />
-				</div>
-			</div>
-			<div class="pageContainer">
-				<div class="background">
-					<img src="img/illestevaBG.jpg" alt="man looking to the left wearing gray blazer, black tunic and patterned sunglasses with green lense" />
-				</div>
-			</div>
+						  <div class="inputwrapper">
+							<h5>Comment</h5>
+							<textarea id="form-comment" placeholder="Please place comment here"></textarea>
+						  </div>
 
+						 <div class="submitButton">Submit</div>
 
+						<h3 class="bottomMessage">Or Call Us: 1-800-039-3939</h3>
+
+					</div><!--fieldset2-->
+				</div>	
+			</div> 
+		</div>
+		</div>
+		</div>
+		<!-----------ABOUT END CONTENT--------------->
+		
 <!--FOOTER STARTS-->
-	<footer class="footer">
+	<footer class="footer-ContactMobile">
 		<div class="row">
 			<nav class="nav">
 				<ul id="footer-menu">
@@ -191,7 +208,8 @@
      <script src="js/fixedNav.js"></script>
 	 <script src="js/hamburger.js"></script>
 	<script src="js/animatedDD.js"></script>
-
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/googleMap.js"></script>
 	</body>
 
 

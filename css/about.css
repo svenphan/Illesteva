@@ -81,6 +81,7 @@ p:first-of-type {
 }
 
 
+
 /**TABLET CHANGES**/
 @media(max-width:80em){
 	
@@ -134,6 +135,7 @@ p:first-of-type {
 	}
 	#aboutTextStuff {
 		padding: 3em 1em 3em 0;
+
 	}
 	.aboutText{
 		width:100%;
@@ -141,6 +143,7 @@ p:first-of-type {
 	}
 	
 	#wheretofindus{
+
 		padding-top:5em;
 		margin-top: 10em;
 	}
@@ -150,5 +153,16 @@ p:first-of-type {
 		display:block;
 		height:380px;
 	}
+	#footer-menu>li {
+	  display: inline-block;
+	  padding: 0;
+	}
+	#footer-menu {
+	  width: 100%;
+	  text-align:left;
+	  font-size: 1.15rem;
+	  padding: 0;
+	}
+
 
 }

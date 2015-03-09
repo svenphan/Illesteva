@@ -6,9 +6,8 @@ body{
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 	/**font-family:adobe-garamond-pro,Garamond,Times,serif;**/
 	line-height: 1.5;
-	position: absolute;
+	position: relative;
 	font-size: 0.70em;
-	bottom: -43px;
 	z-index: 9;
 	width: 100%;
 	background: #ffffff;

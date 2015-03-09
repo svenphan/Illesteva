@@ -115,7 +115,7 @@ a{
 	position:fixed;
 	top:0;
 	left:0;
-	z-index:2;
+	z-index:5;
 	height:auto;
 	width:100%;
 	background:white;
@@ -234,8 +234,6 @@ ul li:hover {
 /***LEVONA ADDED**/
 .dd-hidden {
 	right: 0;
-	background-color: #ffffff;
-	border: solid 1px black;
 	display: block;
 	padding: 1em 1.25em;
 	text-align: center;
@@ -251,7 +249,7 @@ ul li:hover {
 }
 
 .dd-shown {
-	display: block;
+	display: block!important;
 	opacity: 1;
 }
 
@@ -334,6 +332,8 @@ textarea{
 	padding: 0.5em;
 	width: 100%;
 	margin-bottom: 1em;
+	border: 1px solid #949494;
+	margin-top: 0.5em;
 }
 .item{
 max-width: 250px;
@@ -379,12 +379,21 @@ input:active,input:focus{
 }
 
 
+<<<<<<< HEAD
+.submitButton{
+	text-align: center;
+	padding: 1em 2em;
+	border: 1px solid black;
+	font-size: 1rem;
+	margin-top: 1em;
+=======
 .submitButton {
   text-align: center;
   padding: 1em;
   border: 1px solid black;
   font-size: 1rem;
   margin-top: 0.5px;
+>>>>>>> origin/master
 }
 
 .submitButton:hover{
@@ -541,3 +550,9 @@ hr{
 	padding-right:50px;
 }
 
+
+.leonardsMobile,
+.milanMobile,
+.waversMobile{
+	display:none;
+}

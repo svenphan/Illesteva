@@ -133,6 +133,16 @@
 	cursor:pointer;
 }*/
 
+.leonardsMobile,
+.milanMobile,
+.waversMobile{
+	display:none;
+}
+#Leonards{
+	background-image: url("../img/classicLeonard.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 #Milan{
 	background-image:url("../img/classicMilan.jpg");
@@ -309,7 +319,6 @@ article {
 	-webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
 	position:relative;
-    transition:all 2s;
 
 }
 
@@ -428,24 +437,28 @@ article {
 #swatchesContainer div:hover{
 	cursor:pointer;
 }
+
 #detailProductNav{
-	  width: 4%;
+  width: 4%;
   height: auto;
   background: white;
   position: absolute;
   top: 50%;
   right: 3.5%;
   margin-top: -41px;
+  box-shadow:1px 2px 7px #989898;
 }
 
 .iconNav{
 	width: 100%;
-  text-align: center;
-  padding-top: 25%;
-  padding-bottom: 25%;
+	text-align: center;
+	padding-top: 25%;
+	padding-bottom: 25%;
 }
+
+
 .iconNav:first-child{
-	border-bottom:1px solid black;
+	border-bottom:1px solid #bbb;
 
 }
 
@@ -500,28 +513,36 @@ article {
 #leftContent.comments{
 	-webkit-clip-path:polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
 	clip-path:polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
-	-webkit-animation: modalBox 2s; /* Chrome, Safari, Opera */
-    animation: modalBox 2s;
+	-webkit-animation: modalBox 1s; /* Chrome, Safari, Opera */
+    animation: modalBox 1s;
      animation-fill-mode: forwards;
      -webkit-animation-fill-mode: forwards;
 }
 
+#comments{
+	color:#A8A8A8;
+	transition:all 0.5s ease-in-out;
+	-webkittransition:all 0.5s ease-in-out;
+}
 
+#viewProduct{
+	transition:all 0.5s ease-in-out;
+	-webkittransition:all 0.5s ease-in-out;
+
+}
+
+#viewProduct:hover,
+#comments:hover{
+	color:black!important;
+	cursor:pointer;
+	transition:all 0.5s ease-in-out;
+	-webkittransition:all 0.5s ease-in-out;
+}
 .closeBtn.comments{
 	color:black;
 	z-index:1;
 }
 
-/*ProductView*/
-#leftComments.productView{
-	-webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-	clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-	-webkit-animation: productBox 2s; /* Chrome, Safari, Opera */
-    animation: productBox 2s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    transition:all 2s;
-}
 
 
 /*Review Section*/
@@ -578,8 +599,11 @@ article {
 
 input[type="submit"]{
 	width: 100%;
-  border: 1px solid black;
-  background: none;
+	border: 1px solid black;
+	background: none;
+	padding: 2%;
+	font-size: 1rem;
+	text-transform: uppercase;
 }
 
 input[type="submit"]:hover{
@@ -594,21 +618,15 @@ input[type="submit"]:hover{
 	font-style:bold;
 }
 
+#writeReviewSection form{
+	width: 90%;
+	margin: 0 auto;
+}
 /*animation*/
 
 /*modal Box animation*/
 /* Chrome, Safari, Opera */
-@-webkit-keyframes productBox {
-    0% {left:50%;}
-    100% {left:0%;}
  
-}
-
-/* Standard syntax */
-@keyframes productBox {
-    from {background: red;}
-    to {background: yellow;}
-}
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes modalBox {
