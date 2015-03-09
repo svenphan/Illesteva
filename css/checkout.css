@@ -18,6 +18,13 @@
 	margin-bottom:0;
 }
 
+ a:visited{
+	color:black;
+}
+
+a:link, a:hover, a:active{
+	color:white;
+}
 /** Log In Section **/
 .LogInSection{
 	position:relative;
@@ -243,5 +250,13 @@ select {
 		background: #ffffff;
 		color:#000000;	
 	}
+<<<<<<< HEAD
+=======
+
+
+	a:link, a:visited, a:active{
+		color:white;
+	}
+>>>>>>> origin/master
 }
 
