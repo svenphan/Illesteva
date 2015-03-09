@@ -34,6 +34,8 @@ $('#waversBtn').on('click',function(){
         1000);
 });
 
+
+
 // $('#comments').on('click',function(){
 // 	$('#leftContent').addClass('comments');
 // 	$('.closeBtn').addClass('comments')

@@ -639,6 +639,10 @@ hr{
 	list-style-image: none;
 }
 
+#leonardsClickBox{
+	display:none;
+}
+
 .nav>ul li a {
 	color: #000;
 	position: relative;

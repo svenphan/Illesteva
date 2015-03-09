@@ -10,10 +10,10 @@
 
 }
 
-.col-4of12{
+/*.col-4of12{
 	height:100%;
 }
-
+*/
 
 .glassListing .col-4of12{
 	padding-right:2%;
@@ -46,6 +46,7 @@
 
 .row{
 	height:100%;
+	width:100%;
 }
 
 
@@ -351,6 +352,16 @@ article {
 	width:93%;
 
 	
+}
+#leonardsClickBox{
+	width: 100%;
+	background: rgba(255, 255, 255, 0);
+	position: fixed;
+	z-index:1;
+	height:33.33333%;
+	top:0;
+	left:0;
+
 }
 
 #leftContent{
