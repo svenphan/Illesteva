@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		
-				<!--borders-->
+<!--borders-->
 		<div class="leftBorder"></div>
 		<div class="rightBorder"></div>
 		<div class="bottomBorder"></div>
@@ -30,7 +30,7 @@
 				<a href="index.html"><img src="img/illestevaLogo.jpg" alt="illesteva logo"/></a>
 			</div>
 			<ul class="customerInfoContainer">
-				<li><a class="contact-bg dd-toggle">SIGN IN</a>
+				<li id="signInLink"><a class="contact-bg dd-toggle">SIGN IN</a>
 					<ul class="dd-hidden">
 
 					<li><div class="fieldset">
@@ -69,7 +69,7 @@
 					</ul>
 				</li>
 
-				<li><a class="contact-bg dd-toggle">CONTACT</a>
+				<li id="contactLink"><a class="contact-bg dd-toggle">CONTACT</a>
 			      	<ul class="dd-hidden">
 					<li><div class="fieldset">
 					    <h2 class="fs-title">Question/Comment?</h2>
@@ -122,7 +122,7 @@
 								<p class="tax">Plus 12%: $24</p>
 								<div class="total">Total:$224.00</div>
 
-						   		<div class="checkoutButton">Checkout</div>
+						   		<a href="checkout.html"><div class="checkoutButton">Checkout</div></a>
 						</div></li>
 
 					</ul>
@@ -130,11 +130,20 @@
 				</li>
 
 			</ul>
+			<ul class="mobileProductNav">
+				<li><a href="#">Collaborations</a></li>
+                <li><a href="mensStyle.html">Mens</a></li>
+                <li><a href="#">Womens</a></li>
+                <li><span><a href="#">Bags</a></span></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Contact</a></li>
+			</ul>
 		</nav>
+
 		
-		<!-----------CHECKOUT CONTENT--------------->
+		<!--CHECKOUT CONTENT-->
 		
-		<div class="pageContainer">	<!--changed to class or else error-->
+		<div class="pageContainer">
 		<div class="background">
 		<div class="container section-checkout">
 			
@@ -144,14 +153,14 @@
 				<div class="LogInSection">
 					
 					<div class="fieldset2">
-						<!----->	
+						<!--Get Email Section-->	
 						<div class="emailSection">
 							<div class="headerCat"><h4>Enter Your Email</h4></div>
 					    	<div class="inputwrapper"> 
 						        <input type="text" class="form-email" placeholder="">
 						    </div>
 						</div>
-						<!----->	
+						<!--Billing section-->	
 						<div class="Billing">
 						<div class="headerCat"><h4>Billing Address</h4></div>
 						
@@ -195,6 +204,14 @@
 									<option value="united kingdown">United Kingdown</option>
 									<option value="italy">Italy</option>
 									<option value="United States">United States</option>
+									<option value="canada">Canada</option>
+									<option value="united kingdown">United Kingdown</option>
+									<option value="italy">Italy</option>
+									<option value="United States">United States</option>
+									<option value="canada">Canada</option>
+									<option value="united kingdown">United Kingdown</option>
+									<option value="italy">Italy</option>
+									<option value="United States">United States</option>
 								</select>
 							</div>
 							<div class="inputwrapper"> 
@@ -220,9 +237,9 @@
 				<div class="BillingInfo">
 					
 					<div class="fieldset2">
-						<!----->		
+						<!--Shipping-->		
 						<div class="billingSection">
-							<div class="headerCat"><h4>Enter Your Email</h4></div>
+							<div class="headerCat"><h4>Shipping</h4></div>
 					    	<div class="shipping"> 
 						        <form>
 								<input type="radio" name="shipping" id="ship1">UPS Standard - Delivery within 3-6 business days, 15.00 Usd<br>
@@ -232,7 +249,7 @@
 						    </div>
 						</div><!--billingSection-->
 						
-						<!----->		
+						<!--Payment-->		
 						<div class="billingSection">
 							<div class="headerCat"><h4>Payment Method</h4></div>
 					    	<div class="shipping"> 
@@ -242,7 +259,7 @@
 								<p class="terms">You will enter your payment details on an extra secure payment page when you click on "Proceed to Payment". No sensitive information is handled by Illesteva</p>
 								</form>
 						    </div>
-						</div><!--billingSection-->
+						</div><!--PaymentSection-->
 							
 					</div> <!--fieldset2-->
 					
@@ -254,7 +271,7 @@
 			<div class="col-4of12">
 				<div class="OrderSummary">
 					<div class="fieldset2">
-						<!----->		
+						<!--Summar of Purchase-->		
 						<div class="billingSection">
 							<div class="headerCat"><h4>Order Summary</h4></div>
 					    	<div class="summary"> 
@@ -274,11 +291,11 @@
 								<p class="purchasedProductPrice" id="SummedPrice">$1000.00 Usd</p>
 								</div>
 								
-							<div class="finalcheckoutButton">Proceed With Payment</div>
+							<div class="finalcheckoutButton"><a href="index.html">Proceed With Payment</a></div>
 							<p class="finalCheck">Within 14 days of delivery, you may return your order. Exceptions and restrictions apply.</p>
 							
 						    </div>
-						</div><!--billingSection-->
+						</div><!--Summary of purchase Section end-->
 						
 							
 					</div> <!--fieldset2-->
@@ -288,30 +305,31 @@
 			
 		</div>
 		</div>
-		<!-----------ABOUT END CONTENT--------------->
+		</div>
+		<!--CHECKOUT END CONTENT-->
 		
 <!--FOOTER STARTS-->
-	<footer class="footer">
-		<div class="row">
-			<nav class="nav">
-				<ul id="footer-menu">
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="about.html">About</a></li>
-								
-					<li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" id="icon"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://twitter.com/illesteva" target="_blank" id="icon"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://instagram.com/illesteva" target="_blank" id="icon"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-				
-				<div id="footer-info" class="nav">
-					© 2015 Illesteva&nbsp;&nbsp;All rights reserved
-				</div>		
-			</nav>
-			
-		</div>
-	</footer>
+    <footer class="footer">
+        <div class="row">
+            <nav class="nav">
+                <ul id="footer-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
 
-	<!--FOOTER ENDS-->
+                    <li><a href="https://www.facebook.com/pages/Illesteva/190417927639701" target="_blank" class="icon"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/illesteva" target="_blank" class="icon"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/illesteva" target="_blank" class="icon"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+
+                <div id="footer-info" class="nav">
+                    © 2015 Illesteva&nbsp;&nbsp;All rights reserved
+                </div>
+            </nav>
+
+        </div>
+    </footer>
+
+    <!--FOOTER ENDS-->
 
 	<script src="js/jquery.js"></script>
     <script src="js/drop-downs.js"></script>
