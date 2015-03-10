@@ -1,7 +1,3 @@
-body{
-	line-height:1.3em;
-}
-
 .section {        
     position:absolute;
     z-index:1;
@@ -19,7 +15,7 @@ body{
     margin-top:22%;
 }
 .section#s1 {
-    background-image: url("../img/BlogPics/blog5.jpg");   
+    background-image: url("../img/BlogPics/blog1.jpg");   
 }
 
 .section-blog{
@@ -94,10 +90,9 @@ figure{
 .blog-text-wrapper{
 	width:100%;
 	text-align:center;
-	padding:0 2em;
-
-	
+	padding: 0 25%;
 }
+
 .user-content{
 	position:relative;
 	display:block;
@@ -105,6 +100,11 @@ figure{
 	padding: 0 1em;
 	line-height: 1.25em;
 }
+
+#wheretofindus{
+	margin-top:5em;
+}
+
 figcaption{
 	font-size:0.75em;
 	font-style:italic;
@@ -141,6 +141,12 @@ figcaption{
 		line-height: 1.25em;
 	}
 	
+	.blog-text-wrapper{
+		width:100%;
+		text-align:center;
+		padding: 0 10%;
+	}
+	
 	.subhead {
 		padding:0;
 		font-size:1.2em;
@@ -152,12 +158,22 @@ figcaption{
 		padding: 0 2em 0 0;
 	}
 	
+	.user-content {
+		padding:0;
+	}
 	.individualPosts {
 		margin-top: 0em;
+		margin-left: 1em;
 	}
 	
 	.blog-image-wrapper {
+
 		margin-bottom: 5em;
 		padding: 0;
 	}
+	
+	#wheretofindus{
+		margin-top:1em;
+	}
+
 }
