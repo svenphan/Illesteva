@@ -18,11 +18,15 @@
 	margin-bottom:0;
 }
 
- a:visited{
+body{
+	line-height:1.3em;
+}
+
+ a:link, a:visited{
 	color:black;
 }
 
-a:link, a:hover, a:active{
+a:hover, a:active{
 	color:white;
 }
 /** Log In Section **/
@@ -109,6 +113,11 @@ select {
 	font-size:0.85em;
 }
 
+.optionship{
+	padding-bottom:0.75em;
+	line-height:1.3em;
+	
+}
 .terms{
 	padding-left:2em;
 }
