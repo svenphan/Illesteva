@@ -83,6 +83,9 @@ a{
 	margin-bottom: 3%;
 	margin-left:3%;
 	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
 }
 #logo img{
 	width:100%;
@@ -98,6 +101,9 @@ a{
 	padding:0;
 	margin-top:5%;
 	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
 }
 .customerInfoContainer li{
 	display:inline-block;
@@ -107,6 +113,8 @@ a{
 	font-size:0.9rem;
 	transition:all 0.15s ease-in-out;
 	-webkit-transition:all 0.15s ease-in-out;
+	-o-transition:all 0.15s ease-in-out;
+	-moz-transition:all 0.15s ease-in-out;
 
 }
 
@@ -133,11 +141,17 @@ a{
 	margin-top:1%;
 	margin-bottom:1%;
 	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
 	float: left
 }
 .customerInfoContainer.scrollStyle{
 	margin-top:3%;
 	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
 }
 
 
@@ -171,6 +185,8 @@ a{
 	padding: 1%;
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
 }
 
 .callToAction:hover{
@@ -182,6 +198,8 @@ a{
 	border: 1px solid rgb(121, 121, 121);
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
 }
 
 .contentCallToAction div{
@@ -190,13 +208,15 @@ a{
 	margin-left: 5%;
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
 }
 .contentCallToAction h4,
 .contentCallToAction h3{
-	  font-size: 1rem;
-  letter-spacing: 9px;
-  margin: 0;
-  margin-top: 5%;
+	font-size: 1rem;
+	letter-spacing: 9px;
+	margin: 0;
+	margin-top: 5%;
 
 }
 .pageContainer{
@@ -208,6 +228,8 @@ a{
 	background:black;
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
 }
 
 .ctaText{
@@ -235,6 +257,8 @@ a{
 	height:100%;
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
 	margin-top:12%;
 	font-family:"proximaNovaSemiBold";
 	letter-spacing:5px;
@@ -268,6 +292,8 @@ a{
 	padding-bottom:4%;
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.25s ease-in-out;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
 
 }
 
@@ -308,6 +334,8 @@ ul li:hover {
 	letter-spacing:3px;
 	transition:all 0.15s ease-in-out;
 	-webkit-transition:all 0.15s ease-in-out;
+	-moz-transition:all 0.15s ease-in-out;
+	-o-transition:all 0.15s ease-in-out;
 
 }
 
@@ -356,8 +384,13 @@ a.dd-toggle:active,a.dd-toggle:hover{
 	/*border: solid 1px black;*/
 	border:0 none;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
 	border-radius: 3px;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	padding: 10px 30px;
 	position: absolute;
 	width: 300px;
@@ -389,6 +422,8 @@ textarea{
 	width: 100%;
 	overflow: hidden;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	font-family: montserrat;
 	color: #2C3E50;
 	font-size: 13px;
@@ -484,6 +519,8 @@ input:active,input:focus{
   cursor:pointer;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
 }
 
 .removeButton{
@@ -500,6 +537,8 @@ input:active,input:focus{
   color:white;
   cursor:pointer;
   -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
 
@@ -534,6 +573,8 @@ input:active,input:focus{
   color:white;
   cursor:pointer;
   -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
 
@@ -596,6 +637,10 @@ hr{
 .footer nav ul {
 	list-style: none;
 	list-style-image: none;
+}
+
+#leonardsClickBox{
+	display:none;
 }
 
 .nav>ul li a {

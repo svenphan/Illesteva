@@ -1,8 +1,215 @@
-@media (max-width: 40em){
+@media (max-width: 1024px){
 	.container.glassListing{
 		display:block;
 	}
 
+	.row{
+		width:100%;
+		margin:0;
+	}
+
+	.col-4of12{
+		width:50%;
+		padding:0;
+	}
+
+	.container.glassListing{
+		width:100%;
+		padding:0;
+	}
+
+	#backIcon{
+	font-size: 2rem;
+	margin-right: 20%;
+	margin-left: 4%;
+	}
+
+	.reviewBack{
+	left: 4%;
+	top: 3%;
+	position: absolute;
+	}
+	.backIcon{
+	color: black;
+	font-size: 1.75rem;
+	margin-left: 4%;
+	margin-right: 20%;
+	}
+
+	#glassStoryShots{
+		display:none;
+	}
+
+	#productModal{
+		max-width:100%;
+		max-height:100%;
+		left:0;
+		margin-left:0;
+	}
+
+	#leftContent{
+		-webkit-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+		-moz-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+		-o-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+		width:100%;
+		height:85%;
+		position:absolute;
+		bottom:0;
+	}
+
+	.closeBtn{
+		top: 3%;
+		right: 5%;
+		color: white;
+		font-size: 2rem;
+		z-index: 2;
+	}
+
+	#rightContent img{
+		height:100%;
+		width:100%;
+	}
+	.productText p{
+		display:none;
+	}
+
+	.onTop{
+
+	width: 100%;
+	padding-top: 20%
+
+	}
+	#blueGlasses,#clearGlasses{
+	width: 65%;
+	height: 42%;
+	margin: 0 auto;
+
+	}
+	#comments h4{
+	text-align: center;
+	font-size: 1.2rem;
+	text-decoration: underline;
+	}
+	#swatchesContainer div{
+		width:9%;
+	}
+	#swatchesContainer{
+		height:7%;
+	}
+
+	#addBtn{
+	width: 70%;
+	margin-left: -35%;
+	margin-top: 10%;
+	}
+	#productPreviewText{
+		margin-top:-20%;
+	}	
+
+	#productPreviewText h3{
+		margin:2%;
+	}
+	#reviewSection{
+		margin-left:0;
+		margin-top:15%;
+	}
+	#leftContent.comments{
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		-moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		-o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		width: 100%;
+		height: 100%;
+		position:absolute;
+		bottom:0;
+		margin:0;
+		-webkit-animation: modalBox 0.55s; /* Chrome, Safari, Opera */
+    	animation: modalBox 0.55s;
+     	animation-fill-mode: forwards;
+     	-webkit-animation-fill-mode: forwards;
+     	transition:all 0.55s ease-in-out;
+
+	}
+
+	.modalMobile{
+		display:block;
+	}
+
+	.modalDesktop{
+		display:none;
+	}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes modalBox {
+    0% {left:0%;opacity:0;}
+    100% {left:0%;opacity:1;}
+ 
+}
+
+/* Standard syntax */
+@keyframes modalBox {
+    from {left:0%;}
+    to {left:0%;}
+}
+
+}
+@media(max-width:768px){
+	.col-4of12{
+		  width: 50%;
+	}
+
+	.container.glassListing{
+		margin-top:15%;
+	}
+	.backIcon{
+		font-size:3.5rem;
+	}
+	#productModal{
+		margin-top:0;
+	}
+
+	#blueGlasses, #clearGlasses{
+		width:50%;
+	}
+	.closeBtn{
+		font-size:3rem;
+	}
+	#comments h4{
+		font-size:2.2rem;
+	}
+	#productPreviewText{
+		font-size:1.5rem;
+	}
+	#userContainer p{
+		font-size:1.1rem;
+	}
+	.userProfileText{
+		font-size:1.5rem;
+	}
+
+	textarea{
+		height:65%;
+	}
+
+	#writeReviewSection{
+		height:30%;
+	}
+	#writeReviewSection form{
+		height:100%;
+	}
+}
+
+@media (max-width: 30em){
+	.container.glassListing{
+		display:block;
+	}
+	.userProfileText{
+		font-size:1rem;
+	}
+	#userContainer p{
+		font-size:0.75rem;
+	}
 	.row{
 		width:100%;
 		margin:0;
@@ -29,7 +236,12 @@
 	top: 3%;
 	position: absolute;
 	}
-
+	.backIcon{
+	color: black;
+	font-size: 1.75rem;
+	margin-left: 4%;
+	margin-right: 20%;
+	}
 
 	#glassStoryShots{
 		display:none;
@@ -44,6 +256,8 @@
 	#leftContent{
 		-webkit-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
 		clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+		-moz-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
+		-o-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
 		width:100%;
 		height:85%;
 		position:absolute;
@@ -105,6 +319,8 @@
 	#leftContent.comments{
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		-moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		-o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 		width: 100%;
 		height: 100%;
 		position:absolute;
