@@ -47,6 +47,7 @@
 		margin-left:0;
 	}
 
+
 	#leftContent{
 		-webkit-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
 		clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
@@ -214,6 +215,10 @@
 		width:100%;
 		margin:0;
 	}
+
+	.footer{
+	z-index:4;
+}
 
 	.col-4of12{
 		width:100%;

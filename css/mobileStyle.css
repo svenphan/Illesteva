@@ -6,8 +6,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	float: right;
-	height: 55%;
-	padding-right: 3%;
+	height: 50%;
+	padding-right: 0;
 	z-index: 1;
 	position: relative;
 }
@@ -19,6 +19,9 @@
 	font-size:2rem;
 }
 
+.col-4of12{
+	width:33%;
+}
 #productModal{
   position: fixed;
   top: 0;
@@ -32,9 +35,26 @@
   margin-top: 7%;
 
 }
+.finalcheckoutButton{
+	font-size:0.9rem;
+}
+
+.removeButton{
+	font-size: 0.7rem;
+	margin-bottom: 9%;
+}
+.customerInfoContainer{
+	min-width:25%;
+}
 
 #leonardsClickBox{
 	display:none;
+}
+
+.glassListing{
+	width:76%;
+	padding-left:0;
+	padding-right:0;
 }
 
 }
@@ -310,6 +330,9 @@
 .container{
 	margin:0;
 	padding:0;
+}
+.footer{
+	z-index:4;
 }
 
 .backgroundDesktop{
