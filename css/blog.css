@@ -115,6 +115,7 @@ figcaption{
 	position: fixed;
 }
 
+
 @media(max-width:30em){
 	.section-blog {
 		width: 100%;
@@ -130,7 +131,9 @@ figcaption{
 	.content {
 		margin-top:75%;
 	}
-	
+	.blogTitle{
+		line-height:2.5rem;
+	}
 	.blogPost {
 		width: 100%;
 		padding: 0 0.5em 0 0;
